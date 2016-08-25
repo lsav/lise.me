@@ -1,4 +1,5 @@
-<div class="header">
+<nav class="header">
+
 	<div class="logo">
 		
 		<a href="{{ site.baseurl }}/">
@@ -6,19 +7,21 @@
 		</a>
 		
 	</div>
-
-	<div class="nav-left">
-		<ul class="nav-menu">
-			<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-			<li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+  
+  <div class="header-left">
+		<ul class="nav-left">
+			<li><a href="{{ site.baseurl }}/blog" class="grey-link">Blog</a></li>
+			<li><a href="{{ site.baseurl }}/projects" class="grey-link">Projects</a></li>
 		</ul>
 	</div>
+  
+  <div class="header-space"></div>
 	
-		<div class="nav-right">
-		<ul class="nav-menu">
-			<li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a></li>
+  <div class="header-right">
+		<ul class="nav-right">
+			<li><a href="https://github.com/{{ site.author.github }}" class="grey-link">GitHub</a></li>
+			<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="grey-link">LinkedIn</a></li>
 		</ul>
 	</div>
 
-</div>
+</nav>
