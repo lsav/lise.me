@@ -1,0 +1,54 @@
+# Site Info
+
+title: "Lise Savard"
+description: "Second year Engineering Physics student at the University of British Columbia."
+
+# Author info
+author_name: "Lise Savard"
+author_email: lise@lisesavard.com
+author_gravatar: 2fffbf6c303f910454e8798d30a96c68
+github_username: lsav
+linkedin_username: lsava
+
+# Site Settings
+baseurl: ""
+timezone: America/Vancouver
+permalink: posts/:title
+
+# Build settings
+destination: _site
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+sass:
+  sass_dir: _sass
+  style: :compressed
+paginate: 10
+paginate_path: blog/page:num/
+  
+include: ['_pages', "robots.txt"]
+exclude: ['Gemfile', 'Gemfile.lock', 'md-cheatsheet.md']
+gems: [jekyll-sitemap, jekyll-paginate]
+  
+compress_html:
+  clippings: all
+  ignore:
+    envs: [ "test"]
+    
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "null"
+  -
+    scope:
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
