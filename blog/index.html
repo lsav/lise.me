@@ -7,12 +7,14 @@ title: Blog
 	
 	<h1 class="title">{{ page.title }}</h1>
 	
-	<ul class="post-list">
+	<ul class="no-bullet">
   {% for post in paginator.posts %}
     <div class="divider"></div>
     <li>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div class="post-title">
+        <span class="post-link"><a class="title-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </div>
     </li>
     
     <li>
