@@ -6,29 +6,28 @@ title: Blog
 <article>
 	
 	<h1 class="title">{{ page.title }}</h1>
-	
-	<ul class="no-bullet">
-  {% for post in paginator.posts %}
-    <div class="divider"></div>
-    <li>
-      <div class="post-title">
-        <span class="post-link"><a class="title-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></span>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </div>
-    </li>
-    
-    <li>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
 
-{% if paginator.previous_page or paginator.next_page %}
-  {% include pagination.html %}
-{% endif %}
+  {% for post in paginator.posts %}
+  
+    <div class="divider"></div>
+    
+    <div class="post-title">
+      <span class="post-link"><a class="title-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></span>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </div>
+    
+    <div class="excerpt">
+      {{ post.excerpt }}
+    </div>
+    
+  {% endfor %}
+  
+  {% if paginator.previous_page or paginator.next_page %}
+    {% include pagination.html %}
+  {% endif %}
 
 </article>
 
 <div class="back">
-	<a href="{{site.baseurl}}/">Back</a>
+	<a href="{{site.baseurl}}/">Back to home</a>
 </div>

@@ -4,11 +4,12 @@ title: "Lise Savard"
 description: "Second year Engineering Physics student at the University of British Columbia."
 
 # Author info
-author_name: "Lise Savard"
-author_email: lise@lisesavard.com
-author_gravatar: 2fffbf6c303f910454e8798d30a96c68
-github_username: lsav
-linkedin_username: lsava
+author:
+  name: "Lise Savard"
+  email: lise@lisesavard.com
+  gravatar: 2fffbf6c303f910454e8798d30a96c68
+  github: lsav
+  linkedin: lsava
 
 # Site Settings
 baseurl: ""

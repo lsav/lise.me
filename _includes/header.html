@@ -1,8 +1,24 @@
-<aside class="logo">
-	{% assign link = '/' %}
+<div class="header">
+	<div class="logo">
+		
+		<a href="{{ site.baseurl }}/">
+			<img src="http://www.gravatar.com/avatar/{{ site.author.gravatar }}?s=100" class="gravatar">
+		</a>
+		
+	</div>
 
-	<a href="{{ link | prepend: site.baseurl }}">
-		<img src="http://www.gravatar.com/avatar/{{ site.author_gravatar }}?s=80" class="gravatar">
-	</a>
+	<div class="nav-left">
+		<ul class="nav-menu">
+			<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+			<li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+		</ul>
+	</div>
 	
-</aside>
+		<div class="nav-right">
+		<ul class="nav-menu">
+			<li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+			<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a></li>
+		</ul>
+	</div>
+
+</div>
