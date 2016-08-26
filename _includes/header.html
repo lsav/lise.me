@@ -1,26 +1,36 @@
-<nav class="header">
+<nav class="main-nav">
 
 	<div class="logo">
 		
 		<a href="{{ site.baseurl }}/">
 			<img src="http://www.gravatar.com/avatar/{{ site.author.gravatar }}?s=100" class="gravatar">
 		</a>
-		
+
 	</div>
+	
+	<div class="header-top-space"></div>
+	<div class="mobile-nav"></div>
   
   <div class="header-left">
 		<ul class="nav-left">
-			<li><a href="{{ site.baseurl }}/blog" class="grey-link">Blog</a></li>
-			<li><a href="{{ site.baseurl }}/projects" class="grey-link">Projects</a></li>
+			
+			<li>
+				<a href="{{ site.baseurl }}/blog" class="nav-link">Blog</a>
+			</li>
+			
+			<li>
+				<a href="{{ site.baseurl }}/projects" class="nav-link">Projects</a>
+			</li>
+			
 		</ul>
 	</div>
   
-  <div class="header-space"></div>
+  <div class="header-mid-space"></div>
 	
   <div class="header-right">
 		<ul class="nav-right">
-			<li><a href="https://github.com/{{ site.author.github }}" class="grey-link">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="grey-link">LinkedIn</a></li>
+			<li><a href="https://github.com/{{ site.author.github }}" class="nav-link">GitHub</a></li>
+			<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="nav-link">LinkedIn</a></li>
 		</ul>
 	</div>
 

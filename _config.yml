@@ -6,7 +6,6 @@ description: "Second year Engineering Physics student at the University of Briti
 # Author info
 author:
   name: "Lise Savard"
-  email: lise@lisesavard.com
   gravatar: 2fffbf6c303f910454e8798d30a96c68
   github: lsav
   linkedin: lsava
@@ -25,7 +24,7 @@ kramdown:
 sass:
   sass_dir: _sass
   style: :compressed
-paginate: 10
+paginate: 5
 paginate_path: blog/page:num/
   
 include: ['_pages', "robots.txt"]

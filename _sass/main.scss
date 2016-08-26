@@ -42,7 +42,7 @@ a {
     border-radius: 5px;
     margin: 30px 0;
   }
-  &.grey-link {
+  &.nav-link {
     color: $lighter-color;
     &:hover,
     &:focus, {
@@ -180,7 +180,7 @@ ul.no-bullet {
 
 /* prettify the top navigation menu */
 
-.header {
+.main-nav {
   max-width: 136px;
   max-height: 200px;
   margin: 0 auto;
@@ -188,52 +188,37 @@ ul.no-bullet {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  
-}
-.header-left {
-  order: 1;
-  display: none;
-}
-.header {
   &:hover {
     max-width: 600px;
   }
-  &:hover .header-left {
-    display: inline;
-    height: 100%;
-  }
+  &:hover .header-left,
   &:hover .header-right {
     display: inline;
     height: 100%;
+  }
+  &:hover ul.nav-left {
+    animation: expand-left 1s ease 0s 1 normal;
+    -webkit-animation: expand-left 1s ease 0s 1 normal;
+  }
+  &:hover ul.nav-right {
+    animation: expand-right 1s ease 0s 1 normal;
+    -webkit-animation: expand-right 1s ease 0s 1 normal;
   }
 }
 .logo {
   position: absolute;
   left: calc(50% - 64px);
-  text-align: center;
-  animation-duration: 0.8s;
-  animation-fill-mode: both;
-  animation-name: bounce;
-  -webkit-animation-duration: 0.8s;
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-name: bounce;
   a {
-    background: #ddd url("gravatar_wrapper.png");
-    color: #000;
-    text-decoration: none;
-    font-weight: 700;
-    height: 124px;
-    width: 124px;
-    font-size: 1.5em;
+    background: $highlight-color;
+    height: 120px;
+    width: 120px;
     border-radius: 100%;
     display: inline-block;
-    text-align: center;
-    line-height: 100px;
-    border: 5px solid #fff;
+    border: 3px solid #fff;
     box-sizing: border-box;
     &:hover,
     &:focus {
-      background: $highlight-color;
+      background: #f05231;
     }
     .gravatar {
       margin-top: 7px;
@@ -243,50 +228,52 @@ ul.no-bullet {
     }
   }
 }
-.header-space {
-  order: 2;
+.header-mid-space {
+  display: flex;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 124px;
   height: 200px;
-  //visibility: hidden;
 }
+.header-left,
 .header-right {
-  order: 3;
   height: 100%;
   display: none;
 }
-
-ul.nav-left {
-  list-style-type: none;
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  animation: expand-left 1s ease 0s 1;
-  -webkit-animation: expand-left 1s ease 0s 1;
-  & li {
-    display: inline;
-    text-align: center;
-    padding: 8px 40px 8px 0px;
-    font-size: 18px;
-  }
-}
+ul.nav-left,
 ul.nav-right {
   list-style-type: none;
   white-space: nowrap;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  direction: rtl;
-  animation: expand-right 1s ease 0s 1;
-  -webkit-animation: expand-right 1s ease 0s 1;
   & li {
     display: inline;
     text-align: center;
-    padding: 8px 0px 8px 40px;
     font-size: 18px;
   }
+}
+ul.nav-left {
+  & li {
+    padding: 8px 32px 8px 8px;
+  }
+}
+ul.nav-right {
+  direction: rtl;
+  & li {
+    padding: 8px 5px 8px 35px;
+  }
+}
+// hide mobile menu when device is wide enough
+.header-top-space,
+.mobile-nav {
+  display: none;
+}
+
+/* Change menu style for small devices */
+
+@media all and (max-width: 780px) {
+
 }
 
 /* Misc stuff */
@@ -391,6 +378,9 @@ article {
       border: 0;
     }
   }
+  .tiny {
+    font-size: 8px;
+  }
 }
 
 .back {
@@ -458,40 +448,7 @@ section {
 }
 
 
-/* Bounce animation for header */
-
-@keyframes bounce {0% {
-    transform: translate3d( 0, -1000px, 0 );
-  }
-  60% {
-    transform: translate3d( 0, 25px, 0 );
-  }
-  75% {
-    transform: translate3d( 0, -10px, 0 );
-  }
-  90% {
-    transform: translate3d( 0, 5px, 0 );
-  }
-  100% {
-    transform: none;
-  }
-}
-@-webkit-keyframes bounce {0% {
-    -webkit-transform: translate3d( 0, -1000px, 0 );
-  }
-  60% {
-    -webkit-transform: translate3d( 0, 25px, 0 );
-  }
-  75% {
-    -webkit-transform: translate3d( 0, -10px, 0 );
-  }
-  90% {
-    -webkit-transform: translate3d( 0, 5px, 0 );
-  }
-  100% {
-    -webkit-transform: none;
-  }
-}
+/* Menu animations */
 
 @keyframes expand-left {
   from {
@@ -535,10 +492,4 @@ section {
     margin-right:0%;
     width:100%;
   }
-}
-
-/* Change style for small devices and touch screen */
-
-@media all and (max-width: 960px) {
-  
 }
