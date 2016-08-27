@@ -2,6 +2,25 @@
 layout: default
 ---
 
+<script>
+  
+  function printEmail() {
+    
+    /* awesomesauce email obfustimacator */
+    
+    var chars = ",.abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
+    var order = [13, 10, 20, 6, 29, 13, 10, 20, 6, 20, 2, 23, 2, 19, 5, 1, 4, 16, 14];
+    var adlen = order.length;
+    var addr = "";
+    for ( var i = 0 ; i < adlen ; i++ ) {
+      addr += chars[order[i]];
+    }
+    document.write("<a href='mailto:"+addr+"'>"+addr+"</a>");  
+    
+  }
+  
+</script>
+
 <article>
   
   <h1 class="title">Who is Lise?</h1>
@@ -17,7 +36,8 @@ layout: default
   expressive than seeing an unfulfilled niche in the world, dreaming up a device that fills it, and bringing it into reality?
   I switched to Engineering Physics because I want to learn to apply my creativity to the physical world.</p>
   
-  <p>You can connect with me online via <a href="www.linkedin.com/in/lsava">LinkedIn</a> or write to me at lise at my domain.
+  <p>You can connect with me online via <a href="www.linkedin.com/in/lsava">LinkedIn</a> or write to me at
+  <script>printEmail();</script><noscript>lise at my domain</noscript>.
   Offline, you are likely to find me these days working with the
   <a href="http://nanostructure.ece.ubc.ca/">Nanostructures Research Group</a> at UBC, lifting weights, or otherwise enjoying
   the last days of summer.</p>
