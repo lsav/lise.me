@@ -14,6 +14,7 @@ author:
 baseurl: ""
 timezone: America/Vancouver
 permalink: posts/:title
+excerpt_separator: <!--more-->
 
 # Build settings
 destination: _site
@@ -28,7 +29,7 @@ paginate: 5
 paginate_path: blog/page:num/
   
 include: ['_pages', 'robots.txt']
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: ['Gemfile', 'Gemfile.lock', '_site']
 gems: [jekyll-sitemap, jekyll-paginate]
   
 compress_html:
