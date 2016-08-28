@@ -14,7 +14,6 @@ author:
 baseurl: ""
 timezone: America/Vancouver
 permalink: posts/:title
-excerpt_separator: <!--more-->
 
 # Build settings
 destination: _site

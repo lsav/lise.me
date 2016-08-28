@@ -33,7 +33,7 @@ h5 {
 }
 img {
   display: block;
-  margin: auto;
+  margin: 0px auto;
   max-width: 100%;
 }
 a {
@@ -108,10 +108,11 @@ footer {
 }
 ul,
 ol {
-  margin: 40px 0px;
+  margin: 20px 0px;
   padding-left: 50px;
   li {
     word-wrap: break-word;
+    padding: 10px 0px;
   }
   img {
     margin: 40px 0;
@@ -419,7 +420,8 @@ ul.nav-right {
 /* Misc stuff */
 
 iframe {
-  margin: 45px 0 !important;
+  display: block;
+  margin: 40px auto !important;
   width: 100%;
 }
 sup {
@@ -497,6 +499,11 @@ article {
       text-align: center;
     }
   }
+  iframe,
+  img {
+    margin: 25px auto;
+    max-width: 75%;
+  }
   .divider {
     background: #ddd;
     background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
@@ -510,9 +517,11 @@ article {
     margin: 0 auto;
   }
   hr {
+    display: block;
+    width: 75%;
     border: 0;
-    border-bottom: 1px solid #000;
-    margin: 30px 0;
+    border-bottom: 1px dotted $lighter-color;
+    margin: 30px auto;
   }
   p {
     font-size: 15px;
@@ -531,6 +540,12 @@ article {
   }
   .tiny {
     font-size: 8px;
+  }
+  .caption {
+    display: block;
+    text-align: center;
+    margin: -15px auto 20px;
+    color: $lighter-color;
   }
 }
 
