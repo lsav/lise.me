@@ -2,6 +2,7 @@
 layout: post
 title: "What Do Children Really Cost?"
 date: 2016-08-07 21:42:00
+description: "A mathematical analysis of the opportunity cost, to a young straight Vancouver woman, of having children."
 categories: math
 ---
 
@@ -13,7 +14,8 @@ For a lot of people, it seems that the decision of whether or not to have childr
 their lives will feel empty and meaningless without children, while others staunchly insist that they will never have one.
 
 I was in the third camp. Oh, sure, as an adolescent and young(er) adult I was very comfortable proclaiming one stance or another
-without giving them much thought, but it wasn't until more recently that I decided to really sit down and examine the pros and cons of having children.
+without giving them much thought, but it wasn't until more recently that I decided to really sit down and examine the pros and
+cons of having children.
 
 ![Photograph from Darwin's Journal](/assets/images/2016/children-darwin-journal.jpg)
 <span class="caption">Charles Darwin's decision on whether or not to marry. [^1]</span>
@@ -24,7 +26,7 @@ benefits. How do you weigh "freedom to go where I want" against "satisfaction fr
 for example? So, I decided to do as any good mathematically-inclined person would: get as many numbers as I can.
 
 A word of warning: if the idea of associating a monetary value with a child is disturbing to you, it would be a good idea now to
-close this tab.<!--more-->
+close this tab.
 
 # I. The numbers
 

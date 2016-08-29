@@ -2,6 +2,7 @@
 layout: post
 title: "Fairy Lights and Paper Cranes II"
 date: 2016-07-24 10:52:00
+description: "Update on my smart wake-up light headboard project."
 categories: projects, wakeup light
 ---
 
@@ -13,8 +14,8 @@ It's aliiiiiive!
 
 So, the status of the project now:
 
-Get parts -- DONE
-Design and test circuit -- DONE
-Solder, solder -- DONE
-Program the Simblee -- MOSTLY DONE
-Make an Android app, preferably with Tasker plugin -- ???
+* Get parts -- DONE
+* Design and test circuit -- DONE
+* Solder, solder -- DONE
+* Program the Simblee -- MOSTLY DONE
+* Make an Android app, preferably with Tasker plugin -- ???

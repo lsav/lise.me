@@ -2,6 +2,7 @@
 layout: post
 title: "A Different Sort of Accomplishment"
 date: 2016-07-23 22:44:00
+description: "After five years in BC, I finally got around to hiking the Stawamus Chief!"
 categories: life of lise
 ---
 

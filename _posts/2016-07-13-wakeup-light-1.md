@@ -2,6 +2,7 @@
 layout: post
 title: "Fairy Lights and Paper Cranes I"
 date: 2016-07-13 13:50:00
+description: "In which I outline my brilliant plan to make waking up at 5:30 am fun again!"
 categories: projects, wakeup light
 ---
 
@@ -24,7 +25,7 @@ During the school year I wake up at 5:30 AM to go to the gym, which means it loo
 [like this](http://colornames.facts.co/blackcolorcode/blackcolor.png) outside for hours after I get up. A light that slowly
 brightens over the course of about 15 minutes, to allow for a gentler wake up, would be a huge boon.
 
-I decided to combine the two things into one. <!--more-->
+I decided to combine the two things into one.
 
 ![Bed with headboard design sketch](/assets/images/2016/headboard-sketch.jpg)
 Functional and decorative, but probably not comfortable.

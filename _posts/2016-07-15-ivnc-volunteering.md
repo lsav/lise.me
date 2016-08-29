@@ -2,6 +2,8 @@
 layout: post
 title: "Behind the Scenes at a Scientific Conference"
 date: 2016-07-15 12:17:00
+description: "The Nojeh lab members all, ahem, &#8220;volunteered&#8221; to staff our supervisor's conference.
+This is what went down."
 categories: ivnc
 ---
 
@@ -19,7 +21,7 @@ undergrad who has had one year of math and physics and has just started working 
 lab -- I was feeling completely out of my element, and it has been a nice break to turn my attention to planning and organizing,
 which is something I do rather well.
 
-So, what sort of things go into organizing a conference?<!--more-->
+So, what sort of things go into organizing a conference?
 
 Uh, well, mostly printing things and then arranging them into neat piles. Lots and lots of printing...
 
@@ -76,4 +78,4 @@ conference he'd ever attended.
 No... no, wait, the real best part was getting to attend a conference as a first year undergrad at all, but that really deserves
 a whole post of its own.
 
-**Update: the post is now viewable here.**
+**Update: the post is now viewable [here](/posts/ivnc-2016).**
