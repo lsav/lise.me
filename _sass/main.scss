@@ -139,7 +139,7 @@ ol {
 /* Titles for posts, on the blog main page */
 
 .post-title {
-  //margin-top: 12px;
+  padding-top: 12px;
   overflow: hidden;
   display: table;
   width: 100%;
@@ -170,11 +170,14 @@ ol {
     display: block;
     width: 100%;
   }
-  .post-meta {
+  .post-date {
     display: block;
     width: 100%;
     text-align: left;
     padding: 6px 0px;
+  }
+  .post-excerpt {
+    padding: 10px 0px;
   }
 }
 

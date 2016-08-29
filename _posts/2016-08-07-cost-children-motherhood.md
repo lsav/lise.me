@@ -3,6 +3,7 @@ layout: post
 title: "What Do Children Really Cost?"
 date: 2016-08-07 21:42:00
 description: "A mathematical analysis of the opportunity cost, to a young straight Vancouver woman, of having children."
+permalink: /cost-children-motherhood/
 categories: math
 ---
 
