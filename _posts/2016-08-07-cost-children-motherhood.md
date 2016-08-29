@@ -94,7 +94,7 @@ Finally, I added an extra option to see how varying savings rates affect things.
 
 ## III. The true cost, or, "An ode to compound interest"
 
-**Warning: this is the part where I will really be talking about the children as if they were purchasable objects.**
+`Warning: this is the part where I will really be talking about children as if they were purchasable objects.`
 
 A few things jumped out at me while playing around with the spreadsheet.
 
@@ -159,13 +159,12 @@ And I wonder what all of this means for a country whose population is increasing
 replacement rate[^4], then something must be done to encourage people to choose children and preferably to choose children
 early. Reducing their price tag probably wouldn't hurt.
 
-
 [^1]: Darwin's marriage pro-con list is hilarious (to a modern reader) and well worth a gander.
     Here's [an article](https://www.brainpickings.org/2012/08/14/darwin-list-pros-and-cons-of-marriage/) that includes a readable
     transcript of his list.
 
-[^2]: You can always calculate the expected value of any investment with the following formula:
-    initial investment * (annual increase + 1)^years.
+[^2]: You can always calculate the expected value of any investment with the following formula:<br><br>
+    ![Equation for interest calculation](/assets/images/2016/children-interest-eqn.png)
     <br><br>So, $1 invested at age 25 with a 7% annual increase will, at age 45, be $3.87.
 
 [^3]: Tax brackets used were:
