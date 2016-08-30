@@ -63,7 +63,7 @@ been tested on them.
 
 The Verdi GUI UI appears as follows:
 
-![Screenshot of Verdi Gui](/images/2016/verdi-gui-screenshot.png)
+![Screenshot of Verdi Gui](/assets/images/2016/verdi-gui-screenshot.png)
 
 <table>
   <tr>
