@@ -428,11 +428,6 @@ ul.nav-right {
 
 /* Misc stuff */
 
-iframe {
-  display: block;
-  margin: 40px auto !important;
-  width: 100%;
-}
 sup {
   vertical-align: top;
   position: relative;
@@ -510,8 +505,12 @@ article {
   }
   iframe,
   img {
+    display: block;
     margin: 25px auto;
     max-width: 75%;
+    @media (max-width: 580px) {
+      max-width: 100%;
+    }
   }
   .divider {
     background: #ddd;
