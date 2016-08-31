@@ -29,7 +29,7 @@ paginate: 5
 paginate_path: blog/page:num/
   
 include: ['_pages', 'robots.txt']
-exclude: ['Gemfile', 'Gemfile.lock', '_site', 'md-cheatsheet.md']
+exclude: ['Gemfile', 'Gemfile.lock', '_site', 'md-cheatsheet.md', 'rakefile.md', 'README.md']
 gems: [jekyll-sitemap, jekyll-paginate]
   
 compress_html:
