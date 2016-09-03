@@ -6,7 +6,7 @@ $lighter-color: #999;
 /* General font settings & stuff */
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: $normal-color;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -239,7 +239,7 @@ ol {
   padding: 60px 0px 10px;
   margin: 0px auto -12px;
 }
-.hover-catcher {
+/*.hover-catcher {
   width: 130px;
   height: 130px;
   position: absolute;
@@ -265,13 +265,13 @@ ol {
       -webkit-transition: all 1s;
     }
   }
-}
+}*/
 .logo {
   position: absolute;
   left: calc(50% - 60px);
   margin-top: 5px;
   a {
-    background: $highlight-color;
+    background: #ccc;
     height: 120px;
     width: 120px;
     border-radius: 100%;
@@ -280,7 +280,7 @@ ol {
     box-sizing: border-box;
     &:hover,
     &:focus {
-      background: #f05231;
+      background: $highlight-color;
     }
     .gravatar {
       margin-top: 7px;
@@ -295,6 +295,7 @@ ol {
   position: absolute;
   padding: 0px;
   overflow: hidden;
+  width: 200px;
 }
 .header-left {
   right: calc(50% + 64px);
