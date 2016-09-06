@@ -27,7 +27,14 @@ Oh, and because the 5050 LED strip is much bigger and uglier than the pretty lit
 There was a lesson in there somewhere... oh, right! **Making hardware design changes is expensive and time consuming. Do it right on
 the first try next time.**
 
-But anyway, here is the new system, all soldered up and ready to go:
+But anyway, here is the new system, all soldered up and ready to start shining:
 
 ![Photo of finished PCB](/assets/images/2016/headboard-rev2-circuit.jpg)
 <span class="caption">On the bright side, my soldering and board layout skills have improved. No spaghetti wires here!</span>
+
+The updated progress checklist:
+
+* Headboard construction - DONE!
+* Circuitry - DONE!
+* Arduino programming - in progress
+* Android automation - done, just need an Arduino to be able to send commands to.
