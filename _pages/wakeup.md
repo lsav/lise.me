@@ -20,7 +20,7 @@ So I have decided to collect all of the updates and document the project progres
 The current status, as of September 6, 2016, is:
 
 - Completed building of headboard (physical parts). Headboard is now constructed out of brushed stainless steel on
-1x4 lumber, mounted to drywall with keyhold mounts.
+1x4 lumber, mounted to drywall with keyhole mounts.
 - Completed circuit, which consists of an [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno) connected to an
 [HC-05 Bluetooth module](http://www.canadarobotix.com/bluetooth/1258-hc-05-wireless-bluetooth-module) and an
 [Adafruit PWM chip](https://www.adafruit.com/product/1455) to drive the three gate mosfets that control each colour channel.
@@ -29,4 +29,4 @@ shameful degree -- it turns out that programming _colour_ changes is not as simp
 human eye biology is complicated. Who'd've thought! Anyway, the [Git repo](https://github.com/lsav/led-headboard) contains all of
 the up-to-date progress on this part.
 - Integration into Android automated morning wake-up sequence -- this part is done. The phone automatically fetches weather data
-every morning, as well as a Bluetooth wake-up command that currently triggers an exceptionally ugly sunrise.
+every morning, as well as a Bluetooth wake-up command that currently triggers a rather terrifying looking sunrise.

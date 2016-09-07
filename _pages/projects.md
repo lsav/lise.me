@@ -36,8 +36,7 @@ could make it to the gym at open. I wanted a wake-up light to create a sunrise e
 \\
 The project ended up turning a bit more complicated than originally intended, as I later decided that I wanted to use RGBs for a
 more realistic sunrise experience (also because... colours). I got to learn about the, erm, joys, of working with hardware
-and how many interesting effects can be produced when your code doesn't work. No compiler errors here, just wrong electrical
-voltages! \\
+and how many interesting effects can be produced when your code doesn't work. \\
 \\
 The other really interesting thing about this project is translating between human light perception and computer light colour
 outputs. Biology is weird!
