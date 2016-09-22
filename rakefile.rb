@@ -83,5 +83,15 @@ task :publish do
   end
 end
 
+# Deploy to "myblog" ssh target
+# Define this behaviour in ~/.ssh/config by setting "Host" to "myblog" and
+# configuring passwordless login
+desc "Deploy to SSH target 'myblog' using Rsync and clean up deleted content"
+task :deploy do
+  source_dir = File.join(Dir.pwd, '_site')
+  destination_dir = 'testsitedump/'
+  sh "rsync -rtzh --checksum --delete #{source_dir} myblog:#{destination_dir}"
+end
+
 # Default task is to make a new draft
 task :default => [:draft]
