@@ -88,9 +88,14 @@ end
 # configuring passwordless login
 desc "Deploy to SSH target 'myblog' using Rsync and clean up deleted content"
 task :deploy do
-  source_dir = File.join(Dir.pwd, '_site')
+  source_dir = File.join(Dir.pwd, '_site', "*")
   destination_dir = 'testsitedump/'
-  sh "rsync -rtzh --checksum --delete #{source_dir} myblog:#{destination_dir}"
+  if Dir[source_dir].empty?
+    puts "Error: empty directory cannot be deployed"
+  else
+    puts "Deploying!"
+    sh "rsync -rtzh --checksum --delete #{source_dir} myblog:#{destination_dir}"
+  end
 end
 
 # Default task is to make a new draft
