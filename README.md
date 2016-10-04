@@ -1,5 +1,9 @@
 # lsav.github.io
 
-Personal website built with Jekyll.
+Jekyll build for www.lisesavard.com.
 
-Originally based on ["The Plain"](https://github.com/heiswayi/the-plain) Jekyll theme.
+Also source code for lsav.github.io, I guess.
+
+With inspiration from [The Plain](https://github.com/heiswayi/the-plain) theme.
+
+[MIT Licensed](https://opensource.org/licenses/MIT).
