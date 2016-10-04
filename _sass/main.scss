@@ -6,7 +6,7 @@ $lighter-color: #999;
 /* General font settings & stuff */
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   color: $normal-color;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -52,6 +52,8 @@ a {
   }
   &.nav-link {
     color: $lighter-color;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: lowercase;
     &:hover,
     &:focus, {
       color: $highlight-color;
@@ -59,6 +61,8 @@ a {
     }
   }
   &.mob-link {
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: lowercase;
     color: #eee;
     &:hover,
     &:focus, {
@@ -104,12 +108,14 @@ span[data-note] {
 footer {
   color: $lighter-color;
 	text-align: center;
+	font-size: 14px;
 	padding: 40px;
 }
 ul,
 ol {
   margin: 20px 0px;
   padding-left: 50px;
+  font-size: 12px;
   li {
     word-wrap: break-word;
     padding: 10px 0px;
@@ -143,14 +149,18 @@ ol {
   overflow: hidden;
   display: table;
   width: 100%;
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: lowercase;
 }
 .post-link {
   display: table-cell;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: uppercase;
   a {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     border-bottom: none;
   }
@@ -158,11 +168,12 @@ ol {
 .post-date {
   display: table-cell;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-align: right;
 }
 .post-excerpt {
-  padding: 10px 30px 15px;
+  padding: 10px 0px 15px;
+  font-size: 12px;
 }
 // move date below title when screen is too narrow
 @media (max-width: 769px) {
@@ -233,7 +244,7 @@ ol {
   display: none;
 }
 .fullscreen-nav {
-  width: 600px;
+  width: 500px;
   height: 132px;
   display: block;
   padding: 60px 0px 10px;
@@ -295,7 +306,7 @@ ol {
   position: absolute;
   padding: 0px;
   overflow: hidden;
-  width: 200px;
+  width: 190px;
 }
 .header-left {
   right: calc(50% + 64px);
@@ -317,12 +328,12 @@ ul.nav-right {
   }
 }
 ul.nav-left li {
-  padding: 8px 36px 8px 8px;
+  padding: 8px 24px 8px 8px;
 }
 ul.nav-right {
   direction: rtl;
   & li {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 20px;
   }
 }
 
@@ -490,7 +501,7 @@ table {
 /* Container definitions */
 
 article {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   &.extra-wide {
     max-width: 900px;
@@ -499,6 +510,8 @@ article {
     font-size: 24px;
     margin: 45px 0px 25px;
     &.title {
+      font-family: 'Julius Sans One', sans-serif;
+      text-transform: lowercase;
       margin: 20px 0px;
       line-height: 1.4em;
       text-align: center;
@@ -508,7 +521,7 @@ article {
   img {
     display: block;
     margin: 25px auto;
-    max-width: 75%;
+    max-width: 90%;
     @media (max-width: 580px) {
       max-width: 100%;
     }
@@ -533,7 +546,7 @@ article {
     margin: 30px auto;
   }
   p {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.9em;
     word-wrap: break-word;
   }

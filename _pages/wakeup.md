@@ -4,29 +4,41 @@ permalink: /wakeup/
 title: Smart Wake-up Headboard Light
 ---
 
-I first got the idea to make a headboard that would have an integrated, smart wake-up light
-[in July](http://lisesavard.com/posts/wakeup-light-1/). Aside from being actually useful, I wanted to a little bit of exposure to
-circuit design and debugging, as well as embedded programming, two areas with which I have had very little experience.
+This was a project to make a headboard that would look pretty and be useful. It has a built-in wake-up light that
+accepts Bluetooth commands from an Android phone so that, as part of a more comprehensive morning wake-up routine,
+my phone can send a command that triggers a sunrise emulation from my headboard.
+
+Demo video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MBOkNSHl62o" frameborder="0" allowfullscreen></iframe>
+
+The headboard was a collaboration between myself and my partner. Being both avid gym-goers yet also natural night owls,
+we wanted something that would make it possible to get up in the morning to go the gym when it opens.
 
 ![Original headboard design sketch](http://lisesavard.com/assets/images/2016/headboard-sketch.jpg)
+<span class="caption">Initial design sketch</span>
 
-The original design was very simple and I got an [initial prototype](http://lisesavard.com/posts/wakeup-light-2/) working fairly
-quickly. But then the design... grew a little. Here is a more recent design sketch:
+He designed the hardware for the
+[first version](/assets/images/2016/headboard-circuit.jpg), which I later upgraded to include better PWM control
+and more LED colours. I also did the hardware design for version 2.
 
-![Most recent design block diagram](/assets/images/2016/headboard-uno-block.jpg)
+![Block diagram of project](/assets/images/2016/headboard-uno-block.jpg)
+<span class="caption">Block diagram of version 2</span>
 
-So I have decided to collect all of the updates and document the project progress here in full.
+As well, I did the bulk of the prototyping and soldering, but the particularly tricky debugging parts required
+both brains.
 
-The current status, as of September 6, 2016, is:
+![Photo of circuitry](/assets/images/2016/headboard-rev2-circuit.jpg)
+<span class="caption">Photograph of circuitry</span>
 
-- Completed building of headboard (physical parts). Headboard is now constructed out of brushed stainless steel on
-1x4 lumber, mounted to drywall with keyhole mounts.
-- Completed circuit, which consists of an [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno) connected to an
-[HC-05 Bluetooth module](http://www.canadarobotix.com/bluetooth/1258-hc-05-wireless-bluetooth-module) and an
-[Adafruit PWM chip](https://www.adafruit.com/product/1455) to drive the three gate mosfets that control each colour channel.
-- Programming the Arduino to drive the LEDs in a way that looks nice. I have to admit that I underestimated this task to a
-shameful degree -- it turns out that programming _colour_ changes is not as simple as just fading each colour channel, because
-human eye biology is complicated. Who'd've thought! Anyway, the [Git repo](https://github.com/lsav/led-headboard) contains all of
-the up-to-date progress on this part.
-- Integration into Android automated morning wake-up sequence -- this part is done. The phone automatically fetches weather data
-every morning, as well as a Bluetooth wake-up command that currently triggers a rather terrifying looking sunrise.
+The Arduino side was a full-on collaboration -- we pair programmed most of it. The code repo is viewable
+[on GitHub](https://github.com/lsav/led-headboard).
+
+Finally, I made the Android wake-up sequence, which was largely done with
+[Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en) scripts.
+
+Oh, and I made the cranes. :)
+
+Aside from being actually useful, I wanted to get some exposure to circuit design and debugging, as well as
+embedded programming, two areas with which I had had only theoretical knowledge and limited hands-on experience. This
+project fulfilled that purpose quite well.
