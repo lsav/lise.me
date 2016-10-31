@@ -30,10 +30,13 @@ include better PWM control and more LED colours. I also did the hardware design 
 ![Block diagram of project](/assets/images/2016/headboard-uno-block.jpg)
 <span class="caption">Block diagram of version 2</span>
 
+The final circuit consisted of an Arduino, connected to an HC-05 module to receive Bluetooth commands. The Arduino, in
+turn, drives a PWM chip to control the LED lights via three MOSFETs.
+
 ![Photo of circuitry](/assets/images/2016/headboard-rev2-circuit.jpg)
 <span class="caption">Photograph of circuitry</span>
 
-The Arduino side was a full-on collaboration -- we pair programmed most of it.
+The Arduino programming was a full-on collaboration.
 The code repo is viewable [on GitHub](https://github.com/lsav/led-headboard).
 
 Oh, and I made the cranes. :)
