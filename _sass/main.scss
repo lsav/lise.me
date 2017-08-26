@@ -1,5 +1,7 @@
 /* Define colors */
-$highlight-color: #f08222;
+// $highlight-color: #f08222;
+$highlight-color: #F23859;
+$highlight-light: #F95774;
 $normal-color: #333;
 $lighter-color: #999;
 
@@ -306,13 +308,13 @@ ol {
   position: absolute;
   padding: 0px;
   overflow: hidden;
-  width: 190px;
+  width: 160px;
 }
 .header-left {
-  right: calc(50% + 64px);
+  right: calc(50%);
 }
 .header-right {
-  left: calc(50% + 64px);
+  left: calc(50% + 16px);
 }
 ul.nav-left,
 ul.nav-right {
@@ -328,7 +330,7 @@ ul.nav-right {
   }
 }
 ul.nav-left li {
-  padding: 8px 24px 8px 8px;
+  padding: 8px 8px 8px 8px;
 }
 ul.nav-right {
   direction: rtl;
@@ -421,7 +423,7 @@ ul.nav-right {
       & li {
         text-align: center;
         font-weight: bold;
-        background: #fda34a;
+        background: $highlight-light;
         margin-top: -1px;
         overflow: hidden;
         padding: 0px;
