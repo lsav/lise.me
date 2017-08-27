@@ -101,15 +101,14 @@ A few things jumped out at me while playing around with the spreadsheet.
 
 **Scenario 1:** First, holy hell, children are expensive. Using the average numbers listed above, a 32-year-old Vancouver woman
 who gives birth in 2016 will pay $601,392 in childcare costs and lost wages throughout her lifetime. If she did not have a
-child and invested all of her money in the stock index, she would retire with an extra $2.59M.
+child and invested all of her money in an index fund, she would retire with an extra $2.59M.
 
 **Scenario 2:** I tried putting in a more favourable, but still realistic scenario -- maternal age of 40 with an initial income
 of $30,000, an optimistic 2% motherhood penalty, and earning 80% of normal wage during the maternity year. This results in an
 opportunity cost for the first child of $1.21M at age 65.
 
 **Scenario 3:** Then I changed one variable -- I reduced the maternal age from 40 to 25. The retirement savings almost triples
-as a result. So, if you are 25 in 2016 and considering having a child, would you rather have the joys and tribulations of raisin
-a child, or a potential $3.36M extra savings when you turn 65? Or wait 15 years and get a steep discount?
+as a result. So, if you are 25 in 2016 and considering having a child, you have a third choice other than have-the-joys-and-tribulations-of-childraising or $3.36M-extra-retirement-savings: you could wait 15 years and get a steep discount.
 
 The takeaway: "peak childbearing age" aside, it really is better to have children as late as possible. Biology sucks.
 
