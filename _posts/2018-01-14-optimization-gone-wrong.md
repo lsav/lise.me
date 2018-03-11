@@ -100,13 +100,13 @@ $$\lg 2 = 1$$, so $$2n \lg (2n) = 2n + 2n \lg n$$.
 Intuitively, this makes sense. Assume we choose mergesort as our $$n \lg n$$
 sorting algorithm (Python sort is basically a fancy mergesort), ```merge1``` joins the lists first, but the joined list is <strong>re</strong>split as soon 
 as sorting begins. So, the only difference between ```merge1``` and ```merge2```
-is a single extra split. Hence, the additional $$O(n)$$ term, which should fall 
+is a single extra merge. Hence, the additional $$O(n)$$ term, which should fall 
 out for large inputs where it will be completely dwarfed by the $$O(n \lg n)$$
 sorting.
 
-Conclusion: both ```merge```s are asymptotically identical.
+**Conclusion: both merges are asymptotically identical.**
 
-But what about sparing that extra split? Surely this is still a sensible
+But what about sparing that extra merge? Surely this is still a sensible
 thing to do? After all, a _tiny_ bit better is still better.
 
 But, from having worked with Python a bit (and the role I was interviewing for
