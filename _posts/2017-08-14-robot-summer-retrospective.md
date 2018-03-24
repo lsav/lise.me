@@ -1,6 +1,5 @@
 ---
 date: 2017-08-14 11:38:22 -0700
-layout: post
 title: So Ends the Summer of the Robot
 ---
 An upper year Engineering Physics student told me at the beginning of May that this would be the summer where "they take all of you and put you in a room to mash and force you into a cohesive whole."
@@ -16,7 +15,7 @@ When you spend that much time in a room with the same group of people, it's impo
 
 You get to share a lot of emotional highs. Like this one, which was the first time we saw our robot complete the full course:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9E3HC_OsRDA" frameborder="0" allowfullscreen></iframe>
+<div class="video"><iframe src="https://www.youtube.com/embed/9E3HC_OsRDA" frameborder="0" allowfullscreen></iframe></div>
 
 And some emotional lows, which were thankfully not captured on camera, but are probably inevitable when you've spent hours in an un-air-conditioned lab, and it's now 4pm and you haven't eaten anything since breakfast because the sensors broke at 10am and who has time to get food when there are circuits to fix?
 

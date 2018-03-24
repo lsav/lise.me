@@ -56,7 +56,7 @@ been tested on them.
 <a name="I-iii"></a>
 ## iii. Demo Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZaWmGg7Yhww" frameborder="0" allowfullscreen></iframe>
+<div class="video"><iframe src="https://www.youtube.com/embed/ZaWmGg7Yhww" frameborder="0" allowfullscreen></iframe></div>
 
 <a name="II"></a>
 # II. Description of UI Elements

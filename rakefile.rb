@@ -44,13 +44,17 @@ task :draft do
   else
     File.open(path, 'w') do |file| file.write <<-EOS
 ---
-layout: post
 title: #{title}
 ---
 EOS
     end
   end
-  system "c9 open #{path}"  # Open draft for editing
+end
+
+# build with correct variables
+desc "Build."
+task :build do
+  sh "JEKYLL_ENV=production bundle exec jekyll build"
 end
 
 # Publish an existing draft
@@ -99,4 +103,4 @@ task :deploy do
 end
 
 # Default task is to make a new draft
-task :default => [:draft]
+task :default => [:build]

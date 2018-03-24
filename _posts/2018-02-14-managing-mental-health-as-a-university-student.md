@@ -1,7 +1,6 @@
 ---
 date: 2018-02-14 23:19:29 -0700
-layout: post
-title: How I manage mental health
+title: How I Manage Mental Health
 permalink: /mental-health/
 description: "Mental health problems among university students has been epidemic in the last few years, according to major news outlets, university students, and university officials."
 ---
@@ -16,7 +15,7 @@ So, in the interests of promoting student mental health, and because it would be
 ![Corgi puppy](http://cdn2-www.dogtime.com/assets/uploads/2016/08/corgi-puppy-6.jpg)
 <span class="caption">Corgi break before we start. (Corgis are always a boon to mental health.)</span>
 
-#### 1. Exercise.
+### 1. Exercise.
 
 The first step that got me out of the black hole was going to the gym and picking up a barbell.
 
@@ -33,7 +32,7 @@ None of this is new: there's a great deal of support for the notion that [exerci
 
 Summary: if you are feeling down, go for a run. I don't care if it's raining or dark. It can be as short as 1 km. Just go for a run.
 
-#### 2. Eat well.
+### 2. Eat well.
 
 Another thing that improves my mood is keeping a healthy diet. This means lots of protein and vegetables, not too much food overall, very little sugar aside from fresh fruit, and no more than 4 units of alcohol a week, ideally never too close to bedtime.
 
@@ -52,7 +51,7 @@ The bright side is that the reverse is also true -- getting my diet on track is 
 
 Summary: eat well and don't get fat.
 
-#### 3. Keep a healthy sleep schedule.
+### 3. Keep a healthy sleep schedule.
 
 Maybe this is starting to get repetitive, but that's sort of the point -- the most important factor in my mental health is how well I'm taking care of my physical health.
 
@@ -64,7 +63,7 @@ Setting my alarm for the same time every morning has been freeing. No longer do 
 
 Summary: go to bed early and get up early.
 
-#### 4. Take pride in your work.
+### 4. Take pride in your work.
 
 This is a circuit I made for an electrical lab last week:
 
@@ -80,7 +79,7 @@ Can you see how powerful this approach is? **Instead of dreading homework due da
 
 Summary: you can choose to do the bare minimum or you can go above and beyond. One of these options will make you feel like a loser, and the other will make you feel like a boss. Choose the right one.
 
-#### 5. Socialize _less_.
+### 5. Socialize _less_.
 
 I know, this is the opposite of typical student mental health advice, which tends to emphasize making time to socialize.
 
@@ -94,7 +93,7 @@ It feels good in the short run when you are stressed and trying to make a deadli
 
 Summary: it's hard to be happy when you're stuck in an echo chamber of "everything sucks all the time." Seek out people who make you feel better in the long term, not in the short term.
 
-#### 6. Actively choose.
+### 6. Actively choose.
 
 During the course of writing this list, I've come to realise that all these strategies distill to the same thing: taking control of my own life.
 

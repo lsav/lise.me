@@ -1,43 +1,19 @@
 ---
-layout: default
 ---
+<ul class="list pa0">
+  {% for post in paginator.posts %}
+  <li class="mv2">
+    <time class="fr silver ttu">{{ post.date | date: "%b %Y" }} </time>
+    <a href="{{ site.url }}{{ post.url }}" class="db pv1 link highlight-color dim">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 
-<script>
-  
-  function printEmail() {
-    /* definitely impossible-to-crack email obfustimacator */
-    var chars = ",.abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
-    var order = [13, 10, 20, 6, 29, 13, 10, 20, 6, 20, 2, 23, 2, 19, 5, 1, 4, 16, 14];
-    var addr = "";
-    for ( var i = 0 ; i < order.length ; i++ ) {
-      addr += chars[order[i]];
-    }
-    document.write("<a href='mailto:"+addr+"'>"+addr+"</a>");  
-    
-  }
-  
-</script>
-
-<article>
-  
-  <h1 class="title">Who is Lise?</h1>
-  
-  <div class="divider"></div>
-  
-  <p>I began my undergraduate career as a literature major, then made a <span class="tiny">tiny</span> change in direction and
-  decided to pursue <a href="http://www.engphys.ubc.ca/">Engineering Physics</a> at the University of British Columbia, where I
-  am entering my third year.</p>
-  
-  <p>Why Engineering Physics? I initially chose to study literature because I identified with the artistic values of originality
-  and self-expression and believed that these values could only be satisfied by studying humanities. But, what is more
-  expressive than seeing an <a href="/assets/images/2016/headboard-sketch.jpg">unfulfilled niche</a>
-  in the world, <a href="/assets/images/2016/headboard-uno-block.jpg">dreaming up a device</a> that fills it, and
-  <a href="https://youtu.be/MBOkNSHl62o">bringing it into reality</a>?
-  I switched to Engineering Physics because I want to learn to apply my creativity to the tangible world.</p>
-  
-  <p>You can connect with me online via <a href="https://www.linkedin.com/in/lsava">LinkedIn</a> or write to me at
-  <script>printEmail();</script>.
-  Offline, I am most likely to be <a href="https://youtu.be/jkYpXnZ2uf8">picking up heavy things</a>.
-  </p>
-
-</article>
+<!-- jekyll paginate -->
+<div class="tc center mt5">
+  {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path }}">newer</a> {% endif %}
+  {% if paginator.previous_page and paginator.next_page %} - {% endif %}
+  {% if paginator.next_page %} <a href="{{ paginator.next_page_path }}">older</a> {% endif %}
+</div>

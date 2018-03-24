@@ -1,6 +1,5 @@
 ---
 date: 2016-08-30 21:39:09 -0700
-layout: post
 title: "Wake-Up Light v2"
 description: "Wake-up light: now with more lumens, more bits, and more colors."
 categories: projects, wakeup light

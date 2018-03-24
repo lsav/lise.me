@@ -1,0 +1,13 @@
+{% if page.date %} {% unless page.nocomments %}
+  <script src="https://apis.google.com/js/plusone.js"></script>
+  <div class="set-width center mt-4">
+    <div class="move-left">
+      <div class="g-comments"
+        data-href="{{ site.url }}{{ page.url }}"
+        data-width="644"
+        data-first_party_property="BLOGGER"
+        data-view_type="FILTERED_POSTMOD">
+      </div>
+    </div>
+  </div>
+{% endunless %} {% endif %}

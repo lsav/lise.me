@@ -1,6 +1,5 @@
 ---
 date: 2016-09-06 11:19:13 -0700
-layout: post
 title: Goodbye Wordpress, Hello Jekyll
 description: "Lisesavard.com is now proudly powered by Jekyll!"
 categories: site

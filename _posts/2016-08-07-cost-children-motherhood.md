@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "What Do Children Really Cost?"
 date: 2016-08-07 21:42:00
 description: "A mathematical analysis of the opportunity cost, to a young straight Vancouver woman, of having children."
@@ -163,8 +162,7 @@ early. Reducing their price tag probably wouldn't hurt.
     Here's [an article](https://www.brainpickings.org/2012/08/14/darwin-list-pros-and-cons-of-marriage/) that includes a readable
     transcript of his list.
 
-[^2]: You can always calculate the expected value of any investment with the following formula:<br><br>
-    ![Equation for interest calculation](/assets/images/2016/children-interest-eqn.png)
+[^2]: You can always calculate the expected value of any investment with $$\text{initial investment} \times (\text{annual increase} + 1)^{\text{years}}$$
     <br><br>So, $1 invested at age 25 with a 7% annual increase will, at age 45, be $3.87.
 
 [^3]: Tax brackets used were:

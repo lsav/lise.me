@@ -1,5 +1,4 @@
 ---
-layout: page
 permalink: /projects/
 title: Projects
 ---
@@ -21,7 +20,7 @@ waking up before dawn nicer and easier.
 
 Demo video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MBOkNSHl62o" frameborder="0" allowfullscreen></iframe>
+<div class="video"><iframe src="https://www.youtube.com/embed/MBOkNSHl62o" frameborder="0" allowfullscreen></iframe></div>
 
 This project was a collaboration between myself and my partner. He designed the hardware for the
 [first version](/assets/images/2016/headboard-circuit.jpg), which I later upgraded to
@@ -51,7 +50,7 @@ every time the laser was used.
 
 Demo video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZaWmGg7Yhww" frameborder="0" allowfullscreen></iframe>
+<div class="video"><iframe src="https://www.youtube.com/embed/ZaWmGg7Yhww" frameborder="0" allowfullscreen></iframe></div>
 
 I decided to write the program in Python using pre-existing libraries for serial communication and GUI creation.
 The code for Verdi GUI is viewable [here](https://github.com/lsav/verdi-gui).

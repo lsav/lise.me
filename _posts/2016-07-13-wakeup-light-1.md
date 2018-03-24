@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Fairy Lights and Paper Cranes I"
 date: 2016-07-13 13:50:00
 description: "In which I outline my brilliant plan to make waking up at 5:30 am fun again!"

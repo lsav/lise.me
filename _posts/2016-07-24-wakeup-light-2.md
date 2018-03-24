@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Fairy Lights and Paper Cranes II"
 date: 2016-07-24 10:52:00
 description: "Update on my smart wake-up light headboard project."
@@ -10,7 +9,7 @@ categories: projects, wakeup light
 
 It's aliiiiiive!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yjaj-nAhIn0" frameborder="0" allowfullscreen></iframe>
+<div class="video"><iframe src="https://www.youtube.com/embed/Yjaj-nAhIn0" frameborder="0" allowfullscreen></iframe></div>
 
 So, the status of the project now:
 

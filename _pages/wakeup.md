@@ -1,5 +1,4 @@
 ---
-layout: page
 permalink: /wakeup/
 title: Smart Wake-up Headboard Light
 ---
@@ -10,7 +9,7 @@ my phone can send a command that triggers a sunrise emulation from my headboard.
 
 Demo video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MBOkNSHl62o" frameborder="0" allowfullscreen></iframe>
+<div class="video"><iframe src="https://www.youtube.com/embed/MBOkNSHl62o" frameborder="0" allowfullscreen></iframe></div>
 
 The headboard was a collaboration between myself and my partner. Being both avid gym-goers yet also natural night owls,
 we wanted something that would make it possible to get up in the morning to go the gym when it opens.

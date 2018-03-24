@@ -1,34 +1,19 @@
----
-layout: compress
----
-
-<!DOCTYPE html>
+<!doctype>
 <html lang="en">
-
-	<head>
-		{% if page.mathjax %}
-			<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-		{% endif %}
-		
-		{% include head.html %}
-		
-	</head>
-
-	<body>
-
-		{% include header.html %}
-
-		<main>
-			{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
-		</main>
-
-		{% if content contains 'reversefootnote' %}
-			<aside class="note"></aside>
-			<script async src="{{site.baseurl}}/assets/footnotes.js"></script>
-		{% endif %}
-		
-		{% include footer.html %}
-
-	</body>
-
+  {% include head.html %}
+  <body class="lh-copy dark-gray pa0 f6 bg-super-white global-font">
+    {% include banner.html %}
+    <div class="set-width bg-white mt4 mb3 center br2-ns bt bb ba-ns b--light-gray">
+      {% include links.html %}
+      <main class="tl f6 relative set-padding overflow-hidden">
+        {% include posttitle.html %}
+        <div class="markdown-body">
+          {{ content }}
+        </div>
+      </main>
+      {% include pagination.html %}
+    </div>
+    {% include comments.html %}
+    {% include footer.html %}
+  </body>
 </html>

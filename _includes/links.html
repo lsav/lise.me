@@ -1,0 +1,7 @@
+<nav class="bb b--light-gray pv4 tc" aria-label="Main">
+  {% for link in site.links %}
+    <a class="link highlight-color dim mh2 pv1" href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">
+      {{ link.name }}
+    </a>
+  {% endfor %}
+</nav>

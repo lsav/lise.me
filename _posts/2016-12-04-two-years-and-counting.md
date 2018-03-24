@@ -1,7 +1,6 @@
 ---
 date: 2016-12-04 22:58:43 -0700
-layout: post
-title: Two years and counting
+title: Two Years and Counting
 ---
 Two years ago today, I made the decision to go to engineering school.
 

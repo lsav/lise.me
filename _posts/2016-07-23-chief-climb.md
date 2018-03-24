@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "+1 Vancouver Stripe"
 date: 2016-07-23 22:44:00
 description: "After five years in BC, I finally got around to hiking the Stawamus Chief!"
