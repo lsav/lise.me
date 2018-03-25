@@ -34,6 +34,7 @@
     width: calc(100% - 24px);  /* -22px is 2 * 10px gap on either side - 2px border on either side */
     border: 2px solid $lighter-color;
     transform: rotateX(45deg) rotateZ(45deg);
+    @extend .dim;
   }
 }
 .banner-font {

@@ -1,6 +1,15 @@
 <!doctype>
-<html lang="en">
-  {% include head.html %}
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    {% include head.html %}
+
+    {% if page.date or page.math %}
+      <!-- math rendering with katex -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+    {% endif %}
+  </head>
+
   <body class="lh-copy dark-gray pa0 f5 bg-super-white global-font">
     {% include banner.html %}
     <div class="content-width bg-white mt4 mb3 center br2-ns bt bb ba-ns b--light-gray">
@@ -15,5 +24,19 @@
     </div>
     {% include comments.html %}
     {% include footer.html %}
+
+    {% if page.date or page.math %}
+      <script>
+        $("script[type='math/tex']").replaceWith(function() {
+            var tex = $(this).text();
+            return katex.renderToString(tex, {displayMode: false});
+        });
+
+        $("script[type='math/tex; mode=display']").replaceWith(function() {
+            var tex = $(this).html();
+            return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+        });
+      </script>
+    {% endif %}
   </body>
 </html>
