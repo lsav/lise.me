@@ -1,13 +1,21 @@
 {% if page.date %} {% unless page.nocomments %}
   <script src="https://apis.google.com/js/plusone.js"></script>
+
   <div class="set-width center mt-4">
-    <div class="move-left">
-      <div class="g-comments"
-        data-href="{{ site.url }}{{ page.url }}"
-        data-width="644"
-        data-first_party_property="BLOGGER"
-        data-view_type="FILTERED_POSTMOD">
-      </div>
+    <div class="comments-outer-container">
+      <div id="google-comments"></div>
     </div>
   </div>
+
+  <script>
+    $(document).ready(function() {
+      var w = $('.comments-outer-container').width()+2;
+      gapi.comments.render("google-comments", {
+        href: window.location,
+        width: w.toString(),
+        first_party_property: 'BLOGGER',
+        view_type: 'FILTERED_POSTMOD'
+      });
+    });
+  </script>
 {% endunless %} {% endif %}

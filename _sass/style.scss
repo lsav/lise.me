@@ -17,16 +17,18 @@ html { font-size: 16px; }
 }
 .mt-4 { margin-top: -1.25rem; }
 .hide-small { 
-  @media (max-width: 679px) {
+  @media (max-width: 699px) {
     display: none;
   }
-  @media (min-width: 680px) {
+  @media (min-width: 700px) {
     display: inline;
   }
 }
 
-/* fix google comment box being annoyingly off by 2 pixels */
-.move-left { margin-left: -2px; }
+/* fix for google comments being irritatingly off by 2 pixels */
+.comments-outer-container {
+  margin-left: -2px;
+}
 
 /* markdown styles */
 .markdown-body > .highlighter-rouge,
@@ -36,6 +38,11 @@ html { font-size: 16px; }
 }
 .markdown-body {
   h1, h2, h3, h4, h5, h6 { @extend .mt4; }
+  h1 { @extend .f3; }
+  h2, h3 { @extend .f4; }
+  h4, h5 { @extend .f5; }
+  h6 { @extend .f6; }
+  h3, h5, h6 { color: $heading-contrast-color; }
   a {
     text-decoration: none;
     color: $highlight-color;

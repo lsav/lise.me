@@ -4,6 +4,7 @@
   <body class="lh-copy dark-gray pa0 f6 bg-super-white global-font">
     {% include banner.html %}
     <div class="set-width bg-white mt4 mb3 center br2-ns bt bb ba-ns b--light-gray">
+      {% include pagination.html %}
       {% include links.html %}
       <main class="tl f6 relative set-padding overflow-hidden">
         {% include posttitle.html %}
@@ -11,7 +12,6 @@
           {{ content }}
         </div>
       </main>
-      {% include pagination.html %}
     </div>
     {% include comments.html %}
     {% include footer.html %}
