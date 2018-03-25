@@ -5,16 +5,11 @@
 .top-50 { top: 50%; }
 .highlight-color { color: $highlight-color; }
 .global-font { font-family: $body-font, sans-serif; }
-.katex { font-size: 1.13em !important; }
-html { font-size: 16px; }
+.katex { font-size: 1.13rem !important; }
+html { font-size: $base-font-size; }
 
 /* sizing */
-.set-width { max-width: $content-width; }
-.set-padding { padding: $content-padding;
-  @media (max-width: 600px) {
-    padding: $content-padding-narrow;
-  }
-}
+.content-width { max-width: $content-width; }
 .mt-4 { margin-top: -1.25rem; }
 .hide-small { 
   @media (max-width: 699px) {
@@ -40,15 +35,15 @@ html { font-size: 16px; }
   h1, h2, h3, h4, h5, h6 { @extend .mt4; }
   h1 { @extend .f3; }
   h2, h3 { @extend .f4; }
-  h4, h5 { @extend .f5; }
-  h6 { @extend .f6; }
+  h4, h5, h6 { font-size: 1.1rem; }
   h3, h5, h6 { color: $heading-contrast-color; }
+  h6 { font-style: italic; }
   a {
     text-decoration: none;
     color: $highlight-color;
     @extend .dim;
   }
-  code, pre { @extend .f7; }
+  code, pre { @extend .f6; }
   pre {
     margin: 0;
     overflow: auto;    
@@ -69,7 +64,7 @@ html { font-size: 16px; }
     padding-left: 2.4rem;
   }
   .footnotes {
-    @extend .f7, .mt5;
+    @extend .f6, .mt5;
     img { margin: 0.25rem auto; }
     li { padding-bottom: 0.5rem; }
   }
