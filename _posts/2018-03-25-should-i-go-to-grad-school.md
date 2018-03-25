@@ -194,7 +194,7 @@ Phil Agre, [Advice for Undergraduates Considering Grad School](http://polaris.gs
 Ronald T. Azuma, [So Long and Thanks for the PhD](http://www.cs.unc.edu/~azuma/hitch4.html)<br>
 Mike Gleischer, [Grad School FAQ](http://pages.cs.wisc.edu/~gleicher/Web/Advice/GradSchoolFAQ)<br>
 Andrew Peterson, [Should I Attend Grad School in Computer Science?](https://utmandrew.wordpress.com/2009/08/29/should-i-attend-grad-school-in-computer-science/)<br>
-Theo Vassilakis, [Why You Should Work before Grad School](http://ww
+Theo Vassilakis, [Why You Should Work before Grad School](http://www.businessinsider.com/ex-googler-work-before-grad-school-2014-12)
 
 #### Articles from people who didn't go to grad school<a name="people-who-didnt-go"></a>
 {:.no_toc}
