@@ -92,7 +92,7 @@ According to the podcast, one of the reasons humans suck at making predictions i
 
 That is, we try to imagine the future, but we're really only imagining one or two things at a time, while in reality there will be thousands of little things that can completely change the balance.
 
-##### Details about grade school that don't make it into imagination
+##### Details about grad school that don't make it into imagination
 {:.no_toc}
 
 For example, in my imagination, as a grad student I will get to choose a small handful of domains to focus on, based on what interests me the most. I will take some classes related to those domains, meet people with related interests and share ideas, pick some projects that look interesting and see where they lead. Some might fail, but others might take delightful twists and turns. One of them, over the course of hundreds (thousands?) of nights, will eventually be molded into a thesis.
