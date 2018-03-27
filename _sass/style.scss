@@ -10,7 +10,7 @@ html { font-size: $base-font-size; }
 
 /* sizing */
 .content-width { max-width: $content-width; }
-.mt-4 { margin-top: -1.25rem; }
+.mt-4 { margin-top: -1.3rem; }
 .hide-small { 
   @media (max-width: 699px) {
     display: none;
@@ -21,7 +21,7 @@ html { font-size: $base-font-size; }
 }
 
 /* fix for google comments being irritatingly off by 2 pixels */
-.comments-outer-container {
+.comments-container {
   margin-left: -2px;
 }
 

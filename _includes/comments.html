@@ -2,14 +2,14 @@
   <script src="https://apis.google.com/js/plusone.js"></script>
 
   <div class="content-width center mt-4">
-    <div class="comments-outer-container">
+    <div class="comments-container">
       <div id="google-comments"></div>
     </div>
   </div>
 
   <script>
     $(document).ready(function() {
-      var w = $('.comments-outer-container').width()+2;
+      var w = $('.comments-container').width()+2;
       gapi.comments.render("google-comments", {
         href: window.location,
         width: w.toString(),
