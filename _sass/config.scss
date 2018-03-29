@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|Yeseva+One');
 
 /* colors, fonts */
-$highlight-color: #5c74d3;
-$lighter-color: #8291cf;
 $body-font: "PT Sans";
 $banner-font: "Yeseva One";
-$heading-contrast-color: #777;  /* contrast colors for h3, h5, h6 */
+$highlight-color: #5c74d3;
+$lighter-color: #8291cf;
+$heading-contrast-color: #777;   /* contrast colors for h3, h5, h6 */
+$bg-color: #f9f9f9;
+$border-color: #bbb;
 
 /* sizes */
 $base-font-size: 14px;

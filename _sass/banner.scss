@@ -2,12 +2,12 @@
 
 .diamond {
     position: relative;
-    @media (max-width: 699px) {
+    @media (max-width: $content-width + 49px) {
       height: $banner-size-narrow;
       width: $banner-size-narrow;
       line-height: $banner-size-narrow;
     }
-    @media (min-width: 700px) {
+    @media (min-width: $content-width + 50px) {
       height: $banner-size;
       width: $banner-size;
       line-height: $banner-size;
@@ -38,10 +38,10 @@
   }
 }
 .banner-font {
-  @media (max-width: 699px) {
+  @media (max-width: $content-width + 49px) {
     font-size: $banner-font-narrow;
   }
-  @media (min-width: 700px) {
+  @media (min-width: $content-width + 50px) {
     font-size: $banner-font-size;
   }
   font-family: $banner-font, cursive;

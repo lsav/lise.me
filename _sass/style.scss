@@ -1,21 +1,21 @@
 @import "tachyons/tachyons.scss";
 @import "config.scss";
 
-.bg-super-white { background: #f9f9f9; }
+.bg-super-white { background: $bg-color; }
 .top-50 { top: 50%; }
 .highlight-color { color: $highlight-color; }
 .global-font { font-family: $body-font, sans-serif; }
-.katex { font-size: 1.13rem !important; }
+.katex { font-size: 1.15rem !important; }
 html { font-size: $base-font-size; }
 
 /* sizing */
 .content-width { max-width: $content-width; }
-.mt-4 { margin-top: -1.3rem; }
+.mt-4 { margin-top: -1.4rem; }
 .hide-small { 
-  @media (max-width: 699px) {
+  @media (max-width: $content-width + 199px) {
     display: none;
   }
-  @media (min-width: 700px) {
+  @media (min-width: $content-width + 200px) {
     display: inline;
   }
 }
@@ -52,14 +52,16 @@ html { font-size: $base-font-size; }
     display: block;
     max-width: 80%;
     margin: 2rem auto;
+    border: 0.8rem solid white;
+    box-shadow: 1px 1px 2px 2px $border-color;
   }
   hr {
     margin: 2.5em -2rem;
     border: 0;
-    border-bottom: 1px dotted #CCC;
+    border-bottom: 1px dotted $border-color;
   }
   blockquote {
-    background: #f9f9f9;
+    background: $bg-color;
     border-left: .2rem solid $highlight-color;
     padding-left: 2.4rem;
   }
@@ -107,5 +109,5 @@ html { font-size: $base-font-size; }
   display: block;
   text-align: center;
   margin: -1.2rem auto 2rem;
-  color: #888;
+  color: $heading-contrast-color;
 }
