@@ -2,7 +2,7 @@
 title: "Fairy Lights and Paper Cranes I"
 date: 2016-07-13 13:50:00
 description: "In which I outline my brilliant plan to make waking up at 5:30 am fun again!"
-categories: projects, wakeup light
+tags: [projects, wakeup light]
 ---
 
 This has been my bedroom since last summer, when I first moved into my current apartment. Wall colour changes aside, it has been

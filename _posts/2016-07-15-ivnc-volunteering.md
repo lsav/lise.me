@@ -3,7 +3,7 @@ title: "Behind the Scenes at a Nanoelectronics Conference"
 date: 2016-07-15 12:17:00
 description: "The Nojeh lab members all, ahem, &#8220;volunteered&#8221; to staff our supervisor's conference.
 This is what went down."
-categories: ivnc
+tags: [ivnc]
 ---
 
 ![IVNC logo](/assets/images/2016/ivnc-logo-5.png)

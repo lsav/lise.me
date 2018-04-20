@@ -3,8 +3,9 @@ date: 2018-03-26 17:52:35 -0700
 title: Make Google Comments Responsive
 description: How to make Google Plus comment plugin responsive to different screen widths.
 permalink: /responsive-google-comments-jekyll/
+tags: [programming, website]
 ---
-While ~~procrastinating for my assignments~~ doing my latest web site revamp, I decided to try out the Google+ comment plugin. It's super easy to set up, fits nicely with my web site's aesthetic, and doesn't require any contortions to work around static site generation. But when I checked my site out on my phone, this nonsense happened:
+While ~~procrastinating for my assignments~~ doing my latest web site revamp, I decided to try out the Google+ comment plugin. It's super easy to set up, fits nicely with my web site's aesthetic, and doesn't require any contortions to work around static site generation (I use Jekyll). But when I checked my site out on my phone, this nonsense happened:
 
 ![Overly wide google comment box](/assets/images/2018/bad-google-comment-box.png){:width="50%"}
 

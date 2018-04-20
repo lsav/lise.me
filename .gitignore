@@ -1,4 +1,5 @@
 _site/
 _drafts/
+_ignore/
 .sass-cache
 .ruby-version

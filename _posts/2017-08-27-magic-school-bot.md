@@ -2,7 +2,7 @@
 date: 2017-08-27 12:10:35 -0700
 title: The Magic School Bot!
 permalink: /magic-school-bot/
-categories: robot
+tags: [robot, projects]
 ---
 I made quite a few videos of our robot throughout the summer. Here are two of the highlights.
 

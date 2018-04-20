@@ -3,6 +3,7 @@ date: 2018-02-14 23:19:29 -0700
 title: How I Manage Mental Health
 permalink: /mental-health/
 description: "Mental health problems among university students has been epidemic in the last few years, according to major news outlets, university students, and university officials."
+tags: [life]
 ---
 Mental health problems among university students has been epidemic in the last few years, according to [major](https://www.theguardian.com/education/series/mental-health-a-university-crisis) [news](http://www.macleans.ca/education/uniandcollege/the-mental-health-crisis-on-campus/) [outlets](https://www.nytimes.com/2017/10/11/magazine/why-are-more-american-teenagers-than-ever-suffering-from-severe-anxiety.html), university [students](http://www.casa-acae.com/student_mental_health), and university [officials](https://www.ubyssey.ca/news/ono-shares-personal-struggle-at-student-mental-health-summit/). One result of all this attention is that, as we have been assured, the grown-ups have [finally noticed](https://www.thestar.com/news/canada/2017/05/29/youth-mental-health-demand-is-exploding-how-universities-and-business-are-scrambling-to-react.html) and are [definitely going to](https://wellbeing.ubc.ca/examples-and-research/ubc-invests-25-million-student-mental-health) [do something](https://www.newswire.ca/news-releases/new-student-mental-health-program-to-be-piloted-on-seven-canadian-campuses-643007523.html) about it.
 
@@ -23,7 +24,7 @@ I have no idea where the initial drive to do that came from. Before doing it, I 
 
 This is an effect that persists today. Doing a hard workout early in the day is like granting myself a little steely nugget of pride. However much the rest of the day might suck, it is one achievement that can't be taken away.
 
-![Valentine's day is legs day meme](https://lh3.googleusercontent.com/-c46qzZAOD2M/Uva9MR7hp-I/AAAAAAAABbc/w1a47A3DsXY/w530-h795-n/ValentinesDayGym.jpg)
+![Valentine's day is legs day meme](https://lh3.googleusercontent.com/-c46qzZAOD2M/Uva9MR7hp-I/AAAAAAAABbc/w1a47A3DsXY/w530-h795-n/ValentinesDayGym.jpg){:width="50%"}
 <span class="caption">Obligatory Valentine's day gym meme.</span>
 
 A minimal schedule is lifting heavy 3 times a week and a short run. Dropping below this threshold has a dramatic effect on my overall mood. A better schedule is lifting 4 times a week, plus 3 runs. It's worth specifying that this is **not** a cap. I have no idea where the ceiling is for when I will stop getting further benefits from additional exercise. So far as I can see, the ceiling is not reachable with my current workload.

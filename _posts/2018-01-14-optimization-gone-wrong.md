@@ -2,7 +2,7 @@
 date: 2018-01-14 12:38:19 -0700
 title: Optimization Gone Wrong
 description: "This is a story about a question I was asked during an interview recently."
-math: true
+tags: [programming]
 ---
 This is a story about a question I was asked during an interview recently.
 The question was:
