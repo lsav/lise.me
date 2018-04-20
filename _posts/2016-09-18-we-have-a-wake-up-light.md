@@ -2,7 +2,7 @@
 date: 2016-09-18 21:56:41 -0700
 title: "We Have a Wake-up Light!"
 description: "The satisfaction of completing a challenging and long-anticipated project."
-categories: projects, wakeup light
+tags: [projects, wakeup light]
 ---
 Just in time for the fall equinox, no less -- I'm gonna need it!
 

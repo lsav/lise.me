@@ -2,7 +2,7 @@
 date: 2016-08-30 21:39:09 -0700
 title: "Wake-Up Light v2"
 description: "Wake-up light: now with more lumens, more bits, and more colors."
-categories: projects, wakeup light
+tags: [projects, wakeup light]
 ---
 
 It's been a while since the last update on my [wake-up light headboard](/posts/wake-up-light-1/) project and sunrise ain't getting

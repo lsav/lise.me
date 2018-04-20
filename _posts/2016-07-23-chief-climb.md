@@ -2,7 +2,7 @@
 title: "+1 Vancouver Stripe"
 date: 2016-07-23 22:44:00
 description: "After five years in BC, I finally got around to hiking the Stawamus Chief!"
-categories: life of lise
+tags: [life]
 ---
 
 Now for a bit of a change: after 5 years in BC, I finally got around to hiking the Stawamus Chief!

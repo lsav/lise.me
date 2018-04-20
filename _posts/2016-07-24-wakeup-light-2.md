@@ -2,7 +2,7 @@
 title: "Fairy Lights and Paper Cranes II"
 date: 2016-07-24 10:52:00
 description: "Update on my smart wake-up light headboard project."
-categories: projects, wakeup light
+tags: [projects, wakeup light]
 ---
 
 ([Link back to original project design page](/posts/wakeup-light-1))

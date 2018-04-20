@@ -1,6 +1,7 @@
 ---
 date: 2017-08-14 11:38:22 -0700
 title: So Ends the Summer of the Robot
+tags: [robot, projects]
 ---
 An upper year Engineering Physics student told me at the beginning of May that this would be the summer where "they take all of you and put you in a room to mash and force you into a cohesive whole."
 

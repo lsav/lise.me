@@ -10,6 +10,9 @@ links:
   - name: About
     url: /about
     external: false
+  - name: Github
+    url: https://github.com/lsav
+    external: true
   - name: LinkedIn
     url: https://www.linkedin.com/in/lsava/
     external: true
@@ -29,7 +32,7 @@ paginate: 10
 paginate_path: ":num/"
 
 include: ['_pages', 'robots.txt']
-exclude: ['Gemfile', 'Gemfile.lock', '_site', 'rakefile.rb', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', '_site', 'rakefile.rb', 'README.md', '_ignore']
 plugins: [jekyll-sitemap, jekyll-paginate]
 
 defaults:
