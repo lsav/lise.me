@@ -4,7 +4,16 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
-    ]
+      "rakefile.rb",
+      "_ignore/*",
+      "_notes/*",
+      "Gemfile*"
+    ],
+    "redirects": [ {
+      "source" : "/Robot",
+      "destination" : "https://youtu.be/PCNbXAErK9I",
+      "type" : 301
+    } ],
+    "cleanUrls": true
   }
 }

@@ -41,6 +41,7 @@ exclude:
   - rakefile.rb
   - README.md
   - _ignore
+  - _notes
   - .firebaserc
   - firebase.json
   - vendor

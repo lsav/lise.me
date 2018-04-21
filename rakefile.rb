@@ -1,9 +1,3 @@
-# rakefile to automate creation & publication of Jekyll posts
-# accepted commands:
-# - (default) rake draft => prompt for a name, then create a draft with that name in /_drafts
-# - rake publish => list all the drafts that are ready for publishing and prompt for which one to publish
-# - rake publish all => publish all the drafts in /_drafts
-
 require 'time'
 
 # Prompt for title & format it correctly
@@ -13,10 +7,10 @@ def get_input(str)
 end
 
 # Publish a draft
-def publish_draft(source)
+def publish_draft(src)
   # create new file with with timestamp in _posts directory
   cur_time = Time.now.getlocal("-07:00")
-  target = "_posts/#{cur_time.strftime('%Y-%m-%d')}-#{source.gsub('_drafts/', '')}"
+  target = "_posts/#{cur_time.strftime('%Y-%m-%d')}-#{src.gsub('_drafts/', '')}"
   File.open(target, 'w') do |file| file.write <<-EOS
 ---
 date: #{Time.now.getlocal("-07:00")}
@@ -24,12 +18,12 @@ EOS
   end
   
   # copy draft over, but remove the first line
-  File.readlines(source).drop(1).each do |line| 
+  File.readlines(src).drop(1).each do |line| 
     File.open(target, "a+") { |file| file.write(line) }
   end
   
   # delete the draft & return path to new post
-  File.delete(source)
+  File.delete(src)
   target
 end
 
@@ -52,7 +46,7 @@ EOS
 end
 
 # build with correct variables
-desc "Build."
+desc "Build site"
 task :build do
   sh "JEKYLL_ENV=production bundle exec jekyll build"
 end
@@ -78,27 +72,12 @@ task :publish do
       puts "Published #{num} drafts."
     else
       puts "Found #{num} drafts:"
-      drafts.each_with_index { |val, index| puts "    #{index}: #{val.gsub('_drafts/', '')}" }
-      source = drafts[get_input('Which draft would you like to publish? ').to_i]
+      drafts.each_with_index { |val, index| puts "\t#{index}: #{val.gsub('_drafts/', '')}" }
+      src = drafts[get_input('Which draft would you like to publish? ').to_i]
       
-      target = publish_draft(source)
+      target = publish_draft(src)
       puts "Post created at #{target}"
     end
-  end
-end
-
-# Deploy to "myblog" ssh target
-# Define this behaviour in ~/.ssh/config by setting "Host" to "myblog" and
-# configuring passwordless login
-desc "Deploy to SSH target 'myblog' using Rsync and clean up deleted content"
-task :deploy do
-  source_dir = File.join(Dir.pwd, '_site', "*")
-  destination_dir = 'public_html/lisesavard.com/'
-  if Dir[source_dir].empty?
-    puts "Error: empty directory cannot be deployed"
-  else
-    puts "Deploying!"
-    sh "rsync -rtzh --checksum --delete #{source_dir} myblog:#{destination_dir}"
   end
 end
 
