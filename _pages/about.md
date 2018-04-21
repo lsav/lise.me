@@ -7,7 +7,7 @@ permalink: /about/
   function printEmail() {
     /* definitely impossible-to-crack email obfustimacator */
     var chars = ",.abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
-    var order = [13, 10, 20, 6, 29, 13, 10, 20, 6, 20, 2, 23, 2, 19, 5, 1, 4, 16, 14];
+    var order = [13, 10, 20, 6, 29, 13, 10, 20, 6, 1, 14, 6];
     var addr = "";
     for ( var i = 0 ; i < order.length ; i++ ) {
       addr += chars[order[i]];

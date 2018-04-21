@@ -1,0 +1,23 @@
+language: ruby
+rvm:
+- 2.3.3
+
+branches:
+  only:
+  - firebase
+
+sudo: false
+
+before_install:
+  - nvm install node
+
+install:
+  - gem install jekyll
+  - npm install -g firebase-tools
+
+script:
+  - set -e
+  - JEKYLL_ENV=production bundle exec jekyll build
+
+after_script:
+  - firebase deploy --token "$FIREBASE_TOKEN"
