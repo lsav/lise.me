@@ -4,7 +4,28 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
-    ]
+      "rakefile.rb",
+      "_ignore/*",
+      "_notes/*",
+      "Gemfile*"
+    ],
+    "redirects": [
+      {
+        "source" : "/robot",
+        "destination" : "https://youtu.be/PCNbXAErK9I",
+        "type" : 301
+      },
+      {
+        "source" : "/verdi",
+        "destination" : "http://youtu.be/ZaWmGg7Yhww",
+        "type" : 301
+      },
+      {
+        "source" : "/wakeup",
+        "destination" : "https://youtu.be/MBOkNSHl62o",
+        "type" : 301
+      } 
+    ],
+    "cleanUrls": true
   }
 }

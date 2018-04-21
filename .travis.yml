@@ -5,7 +5,7 @@ cache: bundler
 
 branches:
   only:
-  - firebase
+  - master
 
 sudo: false
 
