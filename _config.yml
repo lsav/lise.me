@@ -4,11 +4,11 @@ url: https://lise.me
 google_analytics: UA-112459178-1
 
 links:
-  - name: Blog
+  - name: Home
     url: /
     external: false
-  - name: About
-    url: /about
+  - name: Blog
+    url: /blog/
     external: false
   - name: Github
     url: https://github.com/lsav
@@ -29,7 +29,7 @@ sass:
   sass_dir: _sass
   style: :compressed
 paginate: 10
-paginate_path: ":num/"
+paginate_path: "blog/:num/"
 
 include: ['_pages', 'robots.txt']
 plugins: [jekyll-sitemap, jekyll-paginate]

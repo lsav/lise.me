@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/lsav/lsav.github.io.svg?branch=firebase)](https://travis-ci.org/lsav/lsav.github.io)
+[![Build Status](https://travis-ci.org/lsav/lise.me.svg?branch=master)](https://travis-ci.org/lsav/lise.me)
 
 # Lise Savard
 
