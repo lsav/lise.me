@@ -1,6 +1,6 @@
-{% if page.title %}
+{% if page.title or page.displaytitle %}
 <div class="mb4">
-  <h1 class="ttu f3 mt0 lh-title cb mb2 tc">
+  <h1 class="ttu f3 mt0 lh-title cb mb3 tc">
     {% if page.displaytitle %}
       {{ page.displaytitle }}
     {% else %}
