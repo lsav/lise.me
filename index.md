@@ -3,12 +3,14 @@ displaytitle: Who is Lise?
 ---
 ![Photograph of Lise](/assets/lise-savard-portrait.png)
 
-Hi! I'm Lise, a third year Computer Engineering student at the University of British Columbia.
+I'm a Computer Engineering student at the University of British Columbia, currently entering my fourth (though not necessarily final) year. Aside from my own courses, I'll be a TA for [CPSC 320: Intermediate Algorithms](https://blogs.ubc.ca/cpsc3202017w1/) this year.
 
-Why Computer Engineering? I love the ability of computers to enhance individual creativity and solve problems. In my spare time, I enjoy applying the things I'm learning to improve the world around me: solving the problem of having to [wake up before dawn](https://youtu.be/MBOkNSHl62o), needing to keep [many versions of a single document](https://github.com/lsav/one-resume) in sync, or helping my coworkers operate a [class 4 laser more safely](https://youtu.be/ZaWmGg7Yhww).
+Previously, I was working at [A Thinking Ape Entertainment](http://www.athinkingape.com/) as a Software Development Engineer Intern on the [Kingdoms of Heckfire](http://kingdomsofheckfire.com/) team, doing game client optimization as well as end-to-end feature development.
 
-This summer, I'll be working at [A Thinking Ape Entertainment](http://www.athinkingape.com/) as a Software Development Engineer Intern on the [Kingdoms of Heckfire team](http://kingdomsofheckfire.com/). My previous co-op was at [Copperleaf Technologies](https://www.copperleaf.com/), where I implemented back end features for their software.
+My interests are fairly broad -- I really enjoy having to work within constraints and producing optimally performant and robust software with minimal resources. Specific areas of interest include distributed and scalable systems, systems-level software. I particularly enjoy getting to apply the scientific method to my work, testing and verifying assumptions as I go along in order to be certain of producing the best result.
 
-I also enjoy [picking up](https://youtu.be/jkYpXnZ2uf8) [heavy things](https://youtu.be/iIvTeIvaghg).
+More casually, I enjoy learning about behavioral economics and game theory and finding ways to apply them on an individual scale. Basically I just sometimes really wish that I, too, were a computer that could be optimized.
+
+Oh, and I like to [pick up](https://youtu.be/jkYpXnZ2uf8) [heavy things](https://youtu.be/iIvTeIvaghg).
   
-Get in touch with me! You can connect with me on [LinkedIn](https://www.linkedin.com/in/lsava) or write to me at <script>printEmail();</script>.
+Contact? You can write to me at <script>printEmail();</script>.
