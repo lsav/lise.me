@@ -4,17 +4,17 @@ url: https://lise.me
 google_analytics: UA-112459178-1
 
 links:
-  - name: Home
+  - name: About
     url: /
-    external: false
-  - name: Blog
-    url: /blog/
     external: false
   - name: Github
     url: https://github.com/lsav
     external: true
   - name: LinkedIn
     url: https://www.linkedin.com/in/lsava/
+    external: true
+  - name: Unsplash
+    url: https://unsplash.com/@rampallion
     external: true
 
 permalink: /posts/:title/
