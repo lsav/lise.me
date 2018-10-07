@@ -7,7 +7,7 @@ I'm a Computer Engineering student at the University of British Columbia, curren
 
 Previously, I was working at [A Thinking Ape Entertainment](http://www.athinkingape.com/) as a Software Development Engineer Intern on the [Kingdoms of Heckfire](http://kingdomsofheckfire.com/) team, doing game client optimization as well as end-to-end feature development.
 
-My interests are broad -- I really enjoy having to work within constraints and producing optimally performant and robust software with minimal resources. Specific areas of interest include distributed and scalable systems, systems-level software. I particularly enjoy getting to apply the scientific method to my work, testing and verifying assumptions as I go along in order to be certain of producing the best result.
+My interests are broad -- I really enjoy having to work within constraints and producing optimally performant and robust software with minimal resources. Specific areas I'm interested in include optimization, operating systems, instrumentation, and compilers.
 
 More casually, I enjoy learning about behavioral economics and game theory and finding ways to apply them on an individual scale. Basically I just sometimes really wish that I, too, were a computer that could be optimized.
 

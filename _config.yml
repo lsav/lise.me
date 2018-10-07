@@ -13,9 +13,6 @@ links:
   - name: LinkedIn
     url: https://www.linkedin.com/in/lsava/
     external: true
-  - name: Unsplash
-    url: https://unsplash.com/@rampallion
-    external: true
 
 permalink: /posts/:title/
 
