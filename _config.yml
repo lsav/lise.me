@@ -7,6 +7,9 @@ links:
   - name: About
     url: /
     external: false
+  - name: Blog
+    url: /blog
+    external: false
   - name: Github
     url: https://github.com/lsav
     external: true
