@@ -1,16 +1,15 @@
 ---
-displaytitle: Who is Lise?
+layout: index
 ---
-![Photograph of Lise](/assets/lise-savard-portrait.png)
+<img src="/assets/lise-savard-portrait.png" id="portrait">
 
-I'm a Computer Engineering student at the University of British Columbia, graduating in May 2020.
+<div id="description">
+<h2>Lise Savard</h2>
 
-This past summer, I was an intern at [A Thinking Ape Entertainment](http://www.athinkingape.com/) as a Software Development Engineer Intern on the [Kingdoms of Heckfire](http://kingdomsofheckfire.com/) team, doing game client optimization and end-to-end feature development.
+<p>Computer Engineering student in Vancouver, Canada.</p>
 
-My interests are broad: I like writing code and making thing better, faster, and more reliable. If that sounds too vague, I've generally enjoyed working lower down in the software stack.
+<p>Interests: software engineering, economics, technology, statistical reasoning, how to live a good life.</p>
 
-More casually, I enjoy learning about behavioral economics and game theory and finding ways to apply them on an individual scale. Basically I just sometimes really wish that I, too, were a computer that could be optimized.
+<p><a href="resume">resume</a> // <a href="blog">blog</a></p>
 
-In my spare time, I [take photos](https://unsplash.com/@rampallion) and [pick up](https://youtu.be/jkYpXnZ2uf8) [heavy things](https://youtu.be/iIvTeIvaghg).
-  
-Write to me at <script>printEmail();</script>, or add me on [LinkedIn](https://www.linkedin.com/in/lsava/)!
+</div>

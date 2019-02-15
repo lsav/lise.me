@@ -4,11 +4,11 @@ title: Questions for the Interviewer
 permalink: /interview-questions/
 ---
 
-When I was looking for my first internship, I didn't ask very many questions. I ended up at [an awesome company](https://www.copperleaf.com). I learned a ton and enjoyed going to work.
+When I was looking for my first internship, I didn't ask very many questions. I ended up at [a fantastic company](https://www.copperleaf.com). I learned a ton and enjoyed going to work.
 
 Later experiences taught me that I shouldn't expect to be so lucky every time. For my most recent job hunt, I ended up compiling a rather large list of questions, which I'm reproducing here for future reference and, of course, the benefit of my millions of monthly readers.
 
-These are probably not groundbreaking questions. At least one came from a podcast I once heard. Some came from [Ezra Savard](https://ezrasavard.com) (those ones are all groundbreaking, of course).
+These are probably not groundbreaking questions. Probably at least 80% of them originally came from long-forgotten forum posts, blogs, and podcasts. If I accidentally stole your question, I'm very sorry.
 
 ## 1. Software development
 
@@ -19,6 +19,7 @@ These are probably not groundbreaking questions. At least one came from a podcas
 - What's your code review process like? How long does a ticket usually spend in active review? Can you show me an example of a ticket that is being argued over? What do people tend to argue about?
 - Who tests? How do they test? What type of tests?
 - What's your strategy for managing technical debt?
+- Do you have deadlines? How do you set deadlines? Have you ever missed a deadline? What happened / what would happen?
 
 For these questions, there's no specific answer I'm looking for. I mostly want to see that my potential future manager recognises that grooming tickets is a non-trivial job, that individual engineers' interests don't always align with what's best for the company and balancing the two is necessary, etc.
 
@@ -70,14 +71,10 @@ I particularly love the "name a team other than your own" question, partly becau
 
 This list will probably keep growing -- it managed to grow by one or two while I was copying it over.
 
-I don't ask all of them in one interview, obviously. That would be insane and probably take 3 hours. Typically, I pick 4 or 5 that I think would be good for that particular interviewer -- for example, I'm not going to ask a junior engineer how to identify good future managers.
+I don't ask all of them in one interview, obviously. That would be insane and probably take 3 hours. Typically, I pick 4 or 5 that would particularly suit that interviewer -- for example, I'm not going to ask a junior engineer how to identify good future managers.
 
 How do interviewers react to probing questions like these? Do they abruptly push their chair back, stand up and say, "Who do you think you are, asking these questions as if _you_ have the right to pass judgment on _us_?"
 
 No. My last interviewer burst out laughing when I said I had one more question. "Sorry," he said. "It's just that I've never had anyone ask so many good questions during an interview before."
 
-If you're interviewing right now, ask lots of questions! I think people shoud probe as deeply as possible, get as much information as possible, before accepting a job offer. Ill-fitting jobs are horrible, sanity-draining experiences.
-
-If you used any of these questions, let me know how it worked out!
-
-I'm also really interested in adding to this list of questions. If you have a red-flag that you think people should look out for, and a good question to test for it, please let me know!
+Even though students are at the bottom of the job search pecking order, we still owe it to ourselves probe as deeply as possible, get as much information as possible, before accepting a job offer. The good news is that great companies and great interviewers do understand this, and are happy to answer questions.

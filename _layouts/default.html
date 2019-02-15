@@ -10,14 +10,8 @@
     {% endif %}
   </head>
 
-  <body class="lh-copy dark-gray pa0 f5 bg-super-white global-font">
-
-    <!-- {% include banner.html %} -->
-
-    <!-- <div class="content-width bg-white mt4 mb3 center br2-ns bt bb ba-ns b--light-gray"> -->
-        <div class="content-width bg-white mt0 mb0 center br2-ns bt bb ba-ns b--light-gray">
-      {% include pagination.html %}
-      {% include links.html %}
+  <body class="lh-copy dark-gray pa0 f6 bg-super-white global-font">
+    <div class="content-width bg-white mt0 mb0 center br2-ns bt bb ba-ns b--light-gray">
       <main class="tl f5 relative pa4 pa5-ns overflow-hidden">
         {% include posttitle.html %}
         <div class="markdown-body">
@@ -25,8 +19,6 @@
         </div>
       </main>
     </div>
-    <!-- {% include comments.html %} -->
-    <!-- {% include footer.html %} -->
 
     {% if page.date or page.math %}
       <script>

@@ -6,23 +6,33 @@
 .highlight-color { color: $highlight-color; }
 .global-font { font-family: $body-font, sans-serif; }
 .katex { font-size: 1.15rem !important; }
+.table { display: table; }
+
 html { font-size: $base-font-size; }
 
 /* sizing */
 .content-width { max-width: $content-width; }
+.index-width { max-width: $index-width; }
 .mt-4 { margin-top: -1.4rem; }
-.hide-small { 
-  @media (max-width: $content-width + 199px) {
-    display: none;
-  }
-  @media (min-width: $content-width + 200px) {
-    display: inline;
-  }
-}
 
-/* fix for google comments being irritatingly off by 2 pixels */
-.comments-container {
-  margin-left: -2px;
+/* index page */
+div#portrait {
+  display: table-cell;
+  width: 50%;
+}
+div#description {
+  display: table-cell;
+  width: 50%;
+  padding: 0rem 0.5rem 1.8rem 0.3rem;
+  vertical-align: middle;
+}
+.page-centered {
+  position: absolute;
+  top: -80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 /* markdown styles */
@@ -52,8 +62,8 @@ html { font-size: $base-font-size; }
     display: block;
     max-width: 80%;
     margin: 2rem auto;
-    border: 0.8rem solid white;
-    box-shadow: 1px 1px 2px 2px $border-color;
+    border: 0.5rem solid white;
+    box-shadow: 0.5px 0.5px 1px 1px $border-color;
   }
   hr {
     margin: 2.5em -2rem;
