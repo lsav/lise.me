@@ -3,20 +3,6 @@ description: "Web site of Lise Savard, 3rd year Computer Engineering student at 
 url: https://lise.me
 google_analytics: UA-112459178-1
 
-links:
-  - name: About
-    url: /
-    external: false
-  - name: Blog
-    url: /blog
-    external: false
-  - name: Github
-    url: https://github.com/lsav
-    external: true
-  - name: LinkedIn
-    url: https://www.linkedin.com/in/lsava/
-    external: true
-
 permalink: /posts/:title/
 
 # Build settings

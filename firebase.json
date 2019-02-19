@@ -24,7 +24,12 @@
         "source" : "/wakeup",
         "destination" : "https://youtu.be/MBOkNSHl62o",
         "type" : 301
-      } 
+      }, 
+      {
+        "source" : "/planetlab",
+        "destination" : "http://34.215.231.11",
+        "type" : 301
+      }
     ],
     "cleanUrls": true
   }
