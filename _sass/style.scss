@@ -35,6 +35,21 @@ div#description {
   margin: auto;
 }
 
+/* switch to vertical layout for mobile */
+@media only screen and (max-width: 600px) {
+  .index-width { max-width: $index-width-mobile; }
+  div#portrait {
+    display: table-row;
+    width: 100%;
+  }
+  div#description {
+    display: table-row;
+    width: 100%;
+    padding: 0.5rem;
+    vertical-align: middle;
+  }
+}
+
 /* markdown styles */
 .markdown-body > .highlighter-rouge,
 .markdown-body > blockquote {
