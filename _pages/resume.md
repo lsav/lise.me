@@ -38,10 +38,10 @@ permalink: /resume/
 
 # Projects
 
-* **Kerbodyne Analytic Orbit System (KAOS)**: [mission planning system](https://github.com/KMC-70/KAOS) for imaging satellites using Python, Flask, and PostgreSQL, using a novel analytic algorithm to calculate satellite visibility 75% faster than current industry standard brute force algorithms
+* **Kerbodyne Analytic Orbit System (KAOS)**: a [mission planning system](https://github.com/KMC-70/KAOS) for imaging satellites using Python, Flask, and PostgreSQL, using a novel analytic algorithm to calculate satellite visibility 75% faster than current industry standard brute force algorithms
 
-* **Optimal Node Placement for TensorFlow Inference**: part-time research project with UBC Distributed Systems lab to improve inference throughput by splitting trained TensorFlow models across multiple devices (sadly, we did not succeed in besting [Google's solution](https://www.github.com/tensorflow/serving))
+* **Optimal Node Placement for TensorFlow Inference**: part-time research project with UBC Distributed Systems lab to improve inference throughput by splitting trained TensorFlow models across multiple devices (sadly, we did not succeed in besting [Google's solution](https://www.tensorflow.org/serving))
 
-* **The Magic School Bot!**: a multi-tasking, beacon-sensing, line-following, zipline-riding [secret agent bot](https://youtu.be/PCNbXAErK9I) built in five wild, wild weeks. Won 3rd place at the annual EngPhys Robot Contest
+* **The Magic School Bot!**: a multi-tasking, beacon-sensing, line-following, zipline-riding [secret agent robot](https://youtu.be/PCNbXAErK9I) built in five wild, wild weeks. Won 3rd place at the annual EngPhys Robot Contest
 
-* **Sunrise Lamp**: smart Arduino-powered [lighting system](https://youtu.be/MBOkNSHl62o) to make waking up at 5AM in a Canadian winter slightly more tolerable
+* **Sunrise Lamp**: a smart Arduino-powered [lighting system](https://youtu.be/MBOkNSHl62o) to make waking up at 5AM in a Canadian winter slightly more tolerable
