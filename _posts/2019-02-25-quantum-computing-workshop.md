@@ -1,6 +1,6 @@
 ---
 date: 2019-02-25 21:37:45 -0700
-title: What I learned from a 4-day quantum computing workshop
+title: What I Learned from a 4-day Quantum Computing Workshop
 math: true
 ---
 Over reading week, I got the chance to attend a workshop in gate-based quantum computing. This was a joint venture between UBC's [Quantum Matter Institute](https://qmi.ubc.ca) and industry partners [1QBit](https://1qbit.com) and [Rigetti Computing](https://www.rigetti.com).
@@ -32,6 +32,7 @@ We began with a review of basic quantum mechanics: elementary particles have int
 This translates nicely to computing. Call the "up" orientation $$\lvert 0 \rangle$$, and the "down" orientation $$\lvert 1 \rangle$$ -- now the particle kind of looks like it could be used to represent a bit. But quantum bits have some cool features that regular bits don't have.
 
 ### Superposition
+{:.no_toc}
 
 If our classical bit is somewhere between 0 and 1, then we complain about transistor leakage and throw it away. But if we have a qubit that is between $$\lvert 0 \rangle$$ and $$\lvert 1 \rangle$$, it's a feature, not a bug.
 
@@ -52,6 +53,7 @@ Also, once you measure it, all the information about $$c_1$$ and $$c_2$$ disappe
 This is important enough to warrant repeating: you cannot extract information about $$c_1$$, $$c_2$$. [^1]
 
 ### Entanglement
+{:.no_toc}
 
 Another feature of qubits is that you can put more than one of them into an **entangled** state. In statistical terms, if two qubits are entangled, then the probabilities of measuring $$\lvert 0 \rangle$$ or $$\lvert 1 \rangle$$ for each qubit is no longer conditionally independent.
 
@@ -66,6 +68,7 @@ If two qubits are entangled, then there is a _single_ wave function that describ
 It follows that a qubit that is in a basis state can't be entangled -- it is always separable from the other qubits in the system.
 
 ### Multiple qubits
+{:.no_toc}
 
 We often want to entangle many qubits. But it would be very tedious to write out all their states using conditional probabilities. So, we do the same thing as for the single qubit: write the multi-qubit system as a weighted sum of the basis states.
 
@@ -102,6 +105,7 @@ Classical computing has logic gates. So does quantum computing.
 We can write quantum gates as truth tables, but it is convenient to think of them as matrices. Then applying a gate to a qubit is basically multiplying the gate by the qubit.
 
 ### Single qubit gates
+{:.no_toc}
 
 These operate on our single qubit, $$\lvert \Psi \rangle = (c_1, c_2)^T$$. They will alter the values $$c_1, c_2$$.
 
@@ -121,6 +125,7 @@ Ick. Matrices are so much simpler.
 The Hadamard gate is important because it creates a superposition out of a boring basis qubit. Many quantum algorithms start with Hadamarding everything in sight, because then you can do something interesting with it.
 
 ### Two-qubit gates
+{:.no_toc}
 
 These operate on 2 qubits at once. Which, since a 2-qubit system is a $$4 \times 1$$ matrix, means that the gate is a $$4 \times 4$$ matrix. 
 
@@ -149,6 +154,7 @@ You can then entangle more qubits by applying more CNOTs.
 There are also 3-qubit gates. And, in theory, you can have more complicated gates that operate on many qubits, but it's unnecessary because....
 
 ### Universal quantum gates
+{:.no_toc}
 
 In classical computing, the NAND gate is a universal logic gate -- that is, any possible operation on a classical computer can be reduced to NAND gates.
 
@@ -222,6 +228,7 @@ I'm not convinced that I really _grok_ the concept of decoherence, so I'll just 
 Currently, the best coherence times for qubits are in the range of seconds.
 
 ### Quantum error correction
+{:.no_toc}
 
 This seems like as good a time as any to introduce quantum error correction.
 
