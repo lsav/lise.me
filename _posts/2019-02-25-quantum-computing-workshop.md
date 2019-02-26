@@ -201,19 +201,17 @@ Research into quantum algorithms is very active right now! If you think looking 
 
 # The current state of quantum computing
 
-We don't have a large trove of useful quantum algorithms yet. In fact, the question of how useful quantum algorithms might ever get is still an open question -- for example, a lot of people who seem to know what they're talking about are pretty sure that quantum computers can't solve NP problems in polynomial time.[^2]
-
-This was disappointing to learn, since pop science had told me that quantum computers were going to make [travelling salesmen](https://en.wikipedia.org/wiki/Travelling_salesman_problem) really happy.
+We don't have a large trove of useful quantum algorithms yet. In fact, the question of how useful quantum algorithms might ever get is still an open question -- for example, a lot of people who seem to know what they're talking about are pretty sure that quantum computers can't solve NP problems in polynomial time.[^2] This was disappointing to learn, since pop science had told me that quantum computers were going to make [travelling salesmen](https://en.wikipedia.org/wiki/Travelling_salesman_problem) really happy.
 
 Nevertheless, what quantum algorithms we do have are still pretty useful. For example, during the workshop, it was mentioned that a 1000-qubit universal quantum computer could break RSA in a day, compared to months for the current fastest supercomputers.[^3]
 
 So, what's holding us back from this 1000-qubit universal quantum computer?
 
-Um, well, basically it's really hard to make these things. There are many factors in evaluating the quality of a quantum computer. Here are a few important ones:
+Um, well... basically it's really hard to make these things. There are many factors in evaluating the quality of a quantum computer. Here are a few important ones:
 
 ## Gate fidelity
 
-Current generation CNOT gates have errors in the range of 5-10%. That's really, really awful, especially since many of the more useful algorithms require using a lot of gates.
+Current generation CNOT gates have errors in the range of 5-10%. This is not _completely_ unusable, but the more useful algorithms require using a lot of gates. Current generation gates are effectively unusable for these algorithms.
 
 Single qubit gates are better, but still have room for improvement.
 
@@ -221,9 +219,9 @@ Single qubit gates are better, but still have room for improvement.
 
 Qubits need to remain coherent throughout the duration of the computation. This is difficult to do, because for qubits to remain coherent, they must be perfectly isolated from their surroundings.
 
-The act of measuring, of course, intentionally decoheres the system, but any interaction with the environment will also cause the system to decoherence into a classical probability distribution of basis states. This will introduce errors into your computation, because classical systems can't do cool stuff like interfere with itself to amplify the desire state.
+Any interaction with the environment will also cause the system to decohere into a classical probability distribution of basis states. This is sometimes described as "losing information" to the environment. This will introduce errors into your computation, because classical systems can't do cool stuff like interfere with itself to amplify the desire state.
 
-I'm not convinced that I really _grok_ the concept of decoherence, so I'll just leave it like this: decoherence bad. Break quantum algorithms. Make error.
+I'm still not convinced that I really _grok_ the concept of decoherence, so I'll just leave it like this: decoherence bad. Break quantum algorithms. Make error.
 
 Currently, the best coherence times for qubits are in the range of seconds.
 
@@ -232,11 +230,9 @@ Currently, the best coherence times for qubits are in the range of seconds.
 
 This seems like as good a time as any to introduce quantum error correction.
 
-Errors happen all the time in classical computing as well, for which we have [error correction codes](https://en.wikipedia.org/wiki/Error_correction_code).
+We are already well versed in [error correction codes](https://en.wikipedia.org/wiki/Error_correction_code) from classical computing, where bit flips are accepted as a fact of life. But error correction is a good deal trickier in quantum computing due to the fact that you can't read or [copy](https://en.wikipedia.org/wiki/No-cloning_theorem) qubits. 
 
-Error correction is a good deal trickier in quantum computing due to the fact that you can't read or [copy](https://en.wikipedia.org/wiki/No-cloning_theorem) qubits. 
-
-All hope is not lost. The field of quantum error correction is really, really interesting, because it tries to solve the problem of how to detect and correct and error in a qubit that you're not allowed to measure. I could probably spend way too much time deep diving into it. But the key takeaways are:
+The good news is that all hope is not lost. The field of quantum error correction is really, really interesting, because it tries to solve the problem of how to detect and correct and error in a qubit that you're not allowed to measure. I could probably spend way too much time deep diving into it. But the key takeaways are:
 
 - quantum error correction is possible and could, in theory, be used to create perfect qubits that are immune to decoherence and other noise
 - this requires that the qubits have fewer than 1 error per 1000 (or so) gates, which we're nowhere near
@@ -282,7 +278,7 @@ We learned about a few different hybrid algorithms: variational quantum eigensol
 2. Construct a Hamiltonian that represents your objective function
 3. Construct an initial parameter "guess"
 4. Encode the Hamiltonian into a quantum circuit; run it with the guess and measure the output
-5. Repeat 4 many times to get an estimate of the expectation value of the output, which is in turn an estimate of the "best" value for that particular set of parameters
+5. Repeat step 4 many times to get an estimate of the expectation value of the output, which is in turn an estimate of the "best" value for that particular set of parameters
 6. Modify the guess to try and improve the outcome
 7. Repeat steps 4 to 6 until you're pretty sure you've found the best possible outcome
 8. Output the parameters that produced this best outcome
@@ -294,7 +290,7 @@ Step 4 is done on the quantum computer.
 Steps 3 and 5-8 are done on a classical computer. In brief, you're running a classical optimization routine on the classical computer, and the goal of the optimization routine is to minimize (or maximize) the output of the quantum computer, which the classical computer treats as a black box.
 
 ![Visualization of the variational quantum eigensolver](/assets/images/2019/hybrid-classical.png){: width="50%"}
-<span class="caption">An illustration of how hybric classical-quantum algorithms work. Yanked from 1Qbit's slides.</span>
+<span class="caption">An illustration of how hybric quantum-classical algorithms work. Yanked from 1Qbit's slides.</span>
 
 The hybrid approach has been successfully applied to modelling small atoms. It is also capable of finding solutions to some NP-complete problems (e.g., [max-cut](https://grove-docs.readthedocs.io/en/latest/qaoa.html#our-first-np-hard-problem)), though no one would give me an estimate of the runtime for this, not even in terms of the number of optimization steps.
 
@@ -306,9 +302,7 @@ But let's not be too down on the adiabatic quantum computer -- up until not that
 
 # Quantum supremacy
 
-The immediate goal for a lot of quantum computing researchers is to demonstrate quantum supremacy: one single example of a real life problem being solved on a quantum computer faster than on the best classical computer.
-
-Rigetti is currently offering a [$1M prize](https://medium.com/rigetti/the-rigetti-quantum-advantage-prize-8976492c5c64) for this, by the way.
+The immediate goal for a lot of quantum computing researchers is to demonstrate quantum supremacy: one single example of a real life problem being solved on a quantum computer faster than on the best classical computer. (Rigetti is currently offering a [$1M prize](https://medium.com/rigetti/the-rigetti-quantum-advantage-prize-8976492c5c64) for this, by the way.)
 
 This has not been achieved yet, despite certain past claims by the company-that-shall-not-be-named that it has done so.
 
@@ -316,11 +310,11 @@ The industry presenters at this workshop were very optimistic that the hybrid qu
 
 # Some questions
 
-Aside from the technical questions (e.g. how the hell do you express some arbitrary cost function as a Hamiltonian), I was left with the following major questions about quantum computing in general.
+Aside from the technical questions (e.g. how the hell do you express some arbitrary cost function as a Hamiltonian), I was left with the following burning questions about quantum computing in general.
 
 ## Quantum computers as hardware accelerators?
 
-We spent a _lot_ of time on hybrid quantum-classical algorithms. This is fair, since that's the only current application of quantum computing.
+We spent a _lot_ of time on hybrid quantum-classical algorithms using NISQ. This is fair, since that's the only current application of quantum computing.
 
 But I couldn't shake the feeling that in the hybrid model, the quantum computer is just acting as a glorified hardware accelerator to apply a specific Hamiltonian quickly. And, indeed, Fujitsu recently released a [digital annealer](http://www.fujitsu.com/global/digitalannealer/superiority/), inspired by the adiabatic quantum computer.
 
@@ -334,7 +328,7 @@ Speaking of generalized hardware, a classical computer is made up of rather a lo
 
 A classical computer without storage, memory, registers, and pipelines would be dramatically different. It's hard to imagine that it would be anywhere near as powerful. Yet it's unclear what these might even begin to look like in a quantum computer, which doesn't allow reading or copying of qubits.
 
-Maybe the end game quantum computer will find clever solutions to implement these things. Or maybe it won't, and will just be these limited, circuit-based models. Or maybe the end game quantum computer will have a form we can't even begin to imagine right now. Personally, I'm hoping for option 3, but I don't expect that it will happen terribly soon.
+Maybe the end game quantum computer will find clever solutions to implement these things. Or maybe it won't, and it will just be these limited, circuit-based models. Or maybe the end game quantum computer will have a form we can't even begin to imagine right now. Personally, I'm hoping for option 3, but I don't expect that it will happen terribly soon.
 
 # Summary
 
@@ -372,7 +366,7 @@ I came to this workshop with some questions. After 4 days, I think I can make an
 
 4. **Might I ever be interested in researching quantum computing?** I mean, never say never, right? But currently, my interest remains casual. That said, there seems to be so much room for researchers, such as:
     - electrical engineers and device physicists to make better qubits
-    - mathematicians or theoretical computer scientists to explore the algorithmic possibilities
+    - mathematicians and theoretical computer scientists to explore the algorithmic possibilities
     - computer engineers with excellent imaginations to invent heretofore unseen architectures
     - computational physicists and chemists to find near-term applications
 
