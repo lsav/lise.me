@@ -13,9 +13,13 @@
   <body class="lh-copy dark-gray pa0 f6 bg-super-white global-font">
     <div class="content-width bg-white mt0 mb0 center br2-ns bt bb ba-ns b--light-gray">
       <main class="tl f5 relative pa4 pa5-ns overflow-hidden">
-        {% include posttitle.html %}
         <div class="markdown-body">
+          {% include posttitle.html %}
           {{ content }}
+
+          <div class="tc mt4">
+              {% if page.date %}<a href="/blog/">{% else %}<a href="/">{% endif %}go back</a>
+          </div>
         </div>
       </main>
     </div>
