@@ -4,9 +4,9 @@ title: Questions for the Interviewer
 permalink: /interview-questions/
 ---
 
-When I was looking for my first internship, I didn't ask very many questions. I ended up at [a fantastic company](https://www.copperleaf.com). I learned a ton and enjoyed going to work.
+For most of my job searches, I never asked that many questions -- I was just happy to get any job at all. Most of the time, this has worked out well and I've had good jobs that I learned a lot from.
 
-Later experiences taught me that I shouldn't expect to be so lucky every time. For my most recent job hunt, I ended up compiling a rather large list of questions, which I'm reproducing here for future reference and, of course, the benefit of my millions of monthly readers.
+But the odd exception has taught me that I shouldn't expect to be so lucky every time. For my most recent job hunt, I ended up compiling a rather large list of questions, which I'm reproducing here for future reference and, of course, the benefit of my millions of monthly readers.
 
 These are probably not groundbreaking questions. Probably at least 80% of them originally came from long-forgotten forum posts, blogs, and podcasts. If I accidentally stole your question, I'm very sorry.
 

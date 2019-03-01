@@ -219,7 +219,7 @@ Single qubit gates are better, but still have room for improvement.
 
 Qubits need to remain coherent throughout the duration of the computation. This is difficult to do, because for qubits to remain coherent, they must be perfectly isolated from their surroundings.
 
-Any interaction with the environment will also cause the system to decohere into a classical probability distribution of basis states. This is sometimes described as "losing information" to the environment. This will introduce errors into your computation, because classical systems can't do cool stuff like interfere with itself to amplify the desire state.
+Any interaction with the environment will also cause the system to decohere into a classical probability distribution of basis states. This is sometimes described as "losing information" to the environment. This will introduce errors into your computation, because classical systems can't do cool stuff like interfere with itself to amplify the desired state.
 
 I'm still not convinced that I really _grok_ the concept of decoherence, so I'll just leave it like this: decoherence bad. Break quantum algorithms. Make error.
 
@@ -232,7 +232,7 @@ This seems like as good a time as any to introduce quantum error correction.
 
 We are already well versed in [error correction codes](https://en.wikipedia.org/wiki/Error_correction_code) from classical computing, where bit flips are accepted as a fact of life. But error correction is a good deal trickier in quantum computing due to the fact that you can't read or [copy](https://en.wikipedia.org/wiki/No-cloning_theorem) qubits. 
 
-The good news is that all hope is not lost. The field of quantum error correction is really, really interesting, because it tries to solve the problem of how to detect and correct and error in a qubit that you're not allowed to measure. I could probably spend way too much time deep diving into it. But the key takeaways are:
+The good news is that all hope is not lost. The field of quantum error correction is really, really interesting, because it tries to solve the problem of how to detect and correct an error in a qubit that you're not allowed to measure. I could probably spend way too much time deep diving into it. But the key takeaways are:
 
 - quantum error correction is possible and could, in theory, be used to create perfect qubits that are immune to decoherence and other noise
 - this requires that the qubits have fewer than 1 error per 1000 (or so) gates, which we're nowhere near
@@ -304,7 +304,7 @@ But let's not be too down on the adiabatic quantum computer -- up until not that
 
 The immediate goal for a lot of quantum computing researchers is to demonstrate quantum supremacy: one single example of a real life problem being solved on a quantum computer faster than on the best classical computer. (Rigetti is currently offering a [$1M prize](https://medium.com/rigetti/the-rigetti-quantum-advantage-prize-8976492c5c64) for this, by the way.)
 
-This has not been achieved yet, despite certain past claims by the company-that-shall-not-be-named that it has done so.
+This has not been achieved yet, despite certain past claims by the Company-That-Shall-Not-Be-Named that it has done so.
 
 The industry presenters at this workshop were very optimistic that the hybrid quantum-classical approach has the potential to demonstrate quantum supremacy in the near future.
 
@@ -338,7 +338,7 @@ Here is a summary of the summary:
 
 * Quantum computing has really powerful operations that would require exponential time and space to do on a classical computer, but can be done polynomially on a quantum computer. The challenging part is making those really powerful operations result in a useful measurement.
 
-* Current quantum computers are small, have high error, and have so far fail to demonstrate any advantage. But, it is theoretically possible to have a fault-tolerant quantum computer.
+* Current quantum computers are small, have high error, and have so far failed to demonstrate any advantage. But, it is theoretically possible to have a fault-tolerant quantum computer.
 
 * We have a few examples of quantum algorithms with a proven advantage over classical algorithms. Broadly speaking, we're not entirely sure what quantum computers can solve. It most likely can't solve NP problems in P time, though.
 
@@ -354,7 +354,7 @@ I came to this workshop with some questions. After 4 days, I think I can make an
 
 2. **What is the current state of the art in quantum computing?** tl;dr: small, error prone, still looking for applications.
 
-3. **How could quantum computing impact my future career as a software engineer, and on what time scale?** It would require breakthroughs in both technology _and_ applicability before classical computing is seriously impacted. So, it probably won't impact classical software engineers for a long time, maybe not even before I retire, except researchers and those who work in scientific or high security fields.
+3. **How could quantum computing impact my future career as a software engineer, and on what time scale?** It would require breakthroughs in both technology _and_ applicability before classical computing is seriously impacted. So, it probably won't impact classical software engineers for a long time aside from researchers and those who work in scientific or high security fields.
 
     a. **When should I throw away my RSA keys?** This question is difficult due to its specificity. Rather than give a timeline estimate, here are the milestones I'll be looking for, to indicate that modern encryption might be in imminent danger:
 
@@ -363,6 +363,8 @@ I came to this workshop with some questions. After 4 days, I think I can make an
     - Someone demonstrates factorizing something small, say, the product of two single digit primes
     
     Probably somewhere around stage 2, we'll start seeing effort ramping up to guard against the arrival of the large scale fault tolerant quantum computer.
+
+    It's also worth noting that all of this ado about encryption is due to _one_ algorithm. If someone were to propose another game-changing algorithm, that would basically double the game-changing potential of quantum computing. I guess what I'm saying is, don't take my prediction too seriously, it is very vulnerable to [black swans](https://www.investopedia.com/terms/b/blackswan.asp).
 
 4. **Might I ever be interested in researching quantum computing?** I mean, never say never, right? But currently, my interest remains casual. That said, there seems to be so much room for researchers, such as:
     - electrical engineers and device physicists to make better qubits
