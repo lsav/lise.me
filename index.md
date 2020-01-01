@@ -1,15 +1,6 @@
 ---
 layout: index
 ---
-<img src="/assets/lise-savard-portrait.png" id="portrait">
+Computer Engineering student.
 
-<div id="description">
-<h2>Lise Savard</h2>
-
-<p>Computer Engineering student in Vancouver, Canada.</p>
-
-<p>Interests: science, software, economics, psychology, how to live a good life.</p>
-
-<p><a href="resume">resume</a> // <a href="blog">blog</a></p>
-
-</div>
+Likes: climbing (mountains, boulders), reading (almost anything), making (software, food).

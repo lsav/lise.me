@@ -4,9 +4,35 @@
     {% include head.html %}
   </head>
 
-  <body class="lh-copy dark-gray pa0 f5 bg-super-white global-font">
-    <div class="index-width page-centered markdown-body table">
-      {{ content }}
+  <body class="lh-copy pa0 f5 bg-light global-font">
+    <div class="vh-100 bg-dark text-light">
+      <div class="splash cf center">
+        <div class="fl w-100 w-40-ns pa4 tc h-100">
+          <img src="/assets/lise-savard.jpg" class="br-100 w-40 w-100-ns ba bw2 mt1">
+        </div>
+    
+        <div class="fl w-100 w-60-ns pa4 tl v-top">
+          <h2 class="mt0">lise savard.</h2>
+    
+          <p>{{content}}</p>
+    
+          {% include links.html %}
+        </div>
+      </div>
+    </div>
+
+    <div class="h2 w-100"></div>
+
+    <div class="min-vh-100 mw6 mw7-ns center ph3 ph4-ns">
+      <div id="posts" class="title pt4 pt5-ns pb3 pb4-ns">
+        posts
+      </div>
+
+      {% include posts.html %}
+
+      <div class="pt5 pt6-ns pb3 pb4-ns f6 tc moon-gray">
+        made with &hearts; by lise
+      </div>
     </div>
   </body>
 </html>

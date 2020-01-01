@@ -5,7 +5,7 @@ title: Blog
   {% for post in paginator.posts %}
   <li class="mv2">
     <time class="fr silver ttu">{{ post.date | date: "%b %Y" }} </time>
-    <a href="{{ site.url }}{{ post.url }}" class="db pv1 link highlight-color dim">
+    <a href="{{ site.url }}{{ post.url }}" class="db pv1 link dim">
       {{ post.title }}
     </a>
   </li>

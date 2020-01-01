@@ -3,5 +3,3 @@
 # Lise Savard
 
 My personal website. View live at [lise.me](https://lise.me).
-
-Theme originally based on [scribble](https://github.com/muan/scribble).

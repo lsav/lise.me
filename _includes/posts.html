@@ -1,0 +1,12 @@
+<div class="text-dark">
+  <ul class="list pa0">
+    {% for post in site.posts %}
+    <li class="mv2">
+      <time class="fr silver ttu">{{ post.date | date: "%b %Y" }} </time>
+      <a href="{{ site.url }}{{ post.url }}" class="db pv1 link dim">
+        {{ post.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

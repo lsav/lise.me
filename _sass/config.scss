@@ -1,15 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre');
 
-/* colors, fonts */
-$body-font: "PT Sans";
-$highlight-color: #5c74d3;
+/* fonts */
+$body-font: "Open Sans";
+$header-font: "Proza Libre";
+
+$font-body: "Open Sans";
+$font-header: "Proza Libre";
+
+/* colors */
 $lighter-color: #8291cf;
 $heading-contrast-color: #777;   /* contrast colors for h3, h5, h6 */
-$bg-color: #f9f9f9;
-$border-color: #bbb;
+
+$color-bg-light: #fafafa;
+$color-bg-dark: #00b383;
+$color-text-light: #f3f3f3;
+$color-text-dark: #333;
+$color-link-light: #99ffe4;
+$color-link-dark: #00805e;
+$color-contrast-dark: #777;
+$color-contrast-light: #99ffe4;
 
 /* sizes */
-$base-font-size: 13px;
+$base-font-size: 12px;
 $content-width: 900px;
-$index-width: 420px;
-$index-width-mobile: 250px;
+$splash-width: 450px;

@@ -10,18 +10,21 @@
     {% endif %}
   </head>
 
-  <body class="lh-copy dark-gray pa0 f6 bg-super-white global-font">
-    <div class="content-width bg-white mt0 mb0 center br2-ns bt bb ba-ns b--light-gray">
-      <main class="tl f5 relative pa4 pa5-ns overflow-hidden">
+  <body class="bg-light lh-copy">
+
+    <div class="text-dark mw6 mw7-ns center">
+      <main class="mt7 mb5 mb6-ns tl f5 relative overflow-hidden ph4">
         <div class="markdown-body">
           {% include posttitle.html %}
           {{ content }}
-
-          <div class="tc mt4">
-              {% if page.date %}<a href="/blog/">{% else %}<a href="/">{% endif %}go back</a>
-          </div>
         </div>
       </main>
+    </div>
+
+    <div class="bg-dark fixed top-0 h4 w-100 bb border-light bw2">
+      <a href="/">
+        <img id="portrait" src="/assets/lise-savard.jpg" class="br-100 ba bw2 w4 border-dim bottom-center">
+      </a>
     </div>
 
     {% if page.date or page.math %}
