@@ -4,7 +4,19 @@ displaytitle: Lise Savard
 permalink: /resume/
 ---
 
-<div class="tc"><script>printEmail();</script></div>
+<script>
+function obfustimacateEmail() {
+    var chars = ",.abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
+    var order = [13, 10, 20, 6, 29, 13, 10, 20, 6, 1, 14, 6];
+    var addr = "";
+    for ( var i = 0 ; i < order.length ; i++ ) {
+    addr += chars[order[i]];
+    }
+    document.write("<a href='mailto:"+addr+"'>"+addr+"</a>");  
+}
+</script>
+
+<div class="center-text"><script>obfustimacateEmail();</script></div>
 
 # Education
 

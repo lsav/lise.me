@@ -10,16 +10,16 @@
           <img id="front-portrait" src="/assets/lise-savard.jpg">
         </div>
 
-        <div class="front-bio">
-          <h2 class="mt0">lise savard.</h2>
+        <div class="text-light front-bio">
+          <h2>lise.</h2>
     
           <p>{{content}}</p>
     
           <p>
-            <a href="#posts">blog</a> 
-            <span class="pl1 pr1">//</span>
+            <a href="#blog">blog</a> 
+            <span class="hspace">//</span>
             <a href="/resume">resume</a>
-            <span class="pl1 pr1">//</span>
+            <span class="hspace">//</span>
             <a href="https://www.linkedin.com/in/lsava">linkedin</a>
           </p>
         </div>
@@ -28,24 +28,22 @@
 
     <main class="index">
 
-      <div class="title-string">Posts</div>
+      <div id="blog" class="title-string">Posts</div>
 
       <div class="vspace"></div>
       
-      <div class="text-dark">
-        <ul class="list pa0">
-          {% for post in site.posts %}
-          <li class="mv2">
-            <time class="fr silver ttu">{{ post.date | date: "%b %Y" }} </time>
-            <a href="{{ site.url }}{{ post.url }}" class="db pv1 link dim">
-              {{ post.title }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+      <ul class="text-dark front-posts-list">
+        {% for post in site.posts %}
+        <li>
+          <a href="{{ site.url }}{{ post.url }}">
+            <time>{{ post.date | date: "%b %Y" }}</time>
+            {{ post.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
 
-      <div class="footer">
+      <div class="front-footer">
         made with &hearts; by lise
       </div>
 

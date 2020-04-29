@@ -4,16 +4,12 @@
   {% include head.html %}
 
   <body class="bg-light">
-
-    <div class="banner-bg">
-      <a href="/">
-        <img id="portrait" src="/assets/lise-savard.jpg" class="banner-pic">
-      </a>
-    </div>
+    {% include header.html %}
 
     <main class="default">
-      <div class="markdown-body">
-        {% include titledate.html %}
+      {% include titledate.html %}
+
+      <div class="content">
         {{ content }}
       </div>
     </main>
