@@ -4,8 +4,6 @@ permalink: /verdi-gui/
 title: Verdi Gui v1.1.1 Documentation
 ---
 
-
-
 <ul class="table-of-contents">
   <li><a href="#I">I. Introduction</a>
     <ul class="table-of-contents">

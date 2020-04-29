@@ -1,0 +1,11 @@
+{% if page.title or page.displaytitle %}
+<div class="title-string">
+    {% if page.displaytitle %}
+      {{ page.displaytitle }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+</div>
+{% if page.date %}<div class="date-string">{{ page.date | date_to_string }}</div>{% endif %}
+<div class="vspace">&nbsp;</div>
+{% endif %}
