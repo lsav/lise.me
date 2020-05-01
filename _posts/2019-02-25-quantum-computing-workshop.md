@@ -306,6 +306,8 @@ The immediate goal for a lot of quantum computing researchers is to demonstrate 
 
 This has not been achieved yet, despite certain past claims by the Company-That-Shall-Not-Be-Named that it has done so.
 
+_Update: 8 months later, Google researchers claimed to have [demonstrated quantum supremacy](https://www.nature.com/articles/s41586-019-1666-5)! To be clear, in this post, I was referring to D-Wave, which has a history of exaggerating its computers' capabilities._
+
 The industry presenters at this workshop were very optimistic that the hybrid quantum-classical approach has the potential to demonstrate quantum supremacy in the near future.
 
 # Some questions
