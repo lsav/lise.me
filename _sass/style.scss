@@ -6,11 +6,11 @@
 .vspace { height: 1rem; }
 .hspace { margin: 0rem 0.3rem; }
 .center-text {text-align: center; }
-html { 
-  font-size: $base-font-size; 
-  font-family: $font-body, sans-serif; 
+html {
+  font-size: $base-font-size;
+  font-family: $font-body, sans-serif;
   line-height: 1.5;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 body {
   margin: 0px;
@@ -28,7 +28,7 @@ body {
     opacity: .8; transition: opacity .15s ease-out;
   }
 }
-.text-dark { 
+.text-dark {
   color: $color-text-dark;
   h3, h5, h6 { color: $color-text-meddark; }
   a {
@@ -37,7 +37,7 @@ body {
     @extend .dim;
   }
 }
-.text-light { 
+.text-light {
   color: $color-text-light;
   h3, h5, h6 { color: $color-text-medlight; }
   a {
@@ -47,7 +47,7 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
   margin-bottom: 1.25rem;
   font-family: $font-header, sans-serif;
@@ -157,7 +157,7 @@ h6 { font-style: italic; }
   display: flex;
   flex-direction: column;
 }
-.front-pic { margin: 25px 0px; }
+.front-pic { margin: 30px 0px; }
 .front-bio { padding: 0px 30px; }
 
 #front-portrait {
@@ -172,7 +172,7 @@ h6 { font-style: italic; }
 
 @media (orientation: landscape) {
   .front-box {
-    max-width: 450px;
+    max-width: 480px;
     flex-direction: row;
   }
 }
@@ -204,7 +204,7 @@ h6 { font-style: italic; }
   code, pre { font-size: .9rem; }
   pre {
     margin: 0;
-    overflow: auto;    
+    overflow: auto;
   }
   img {
     display: block;
@@ -226,7 +226,7 @@ h6 { font-style: italic; }
     margin: 1.75em 0rem;
     border-left: .5rem solid $color-link-dark;
   }
-  a.footnote:before {   
+  a.footnote:before {
     content: "[";
   }
   a.footnote:after {

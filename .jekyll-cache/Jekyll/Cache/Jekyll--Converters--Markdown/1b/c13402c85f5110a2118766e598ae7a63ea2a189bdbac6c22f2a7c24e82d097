@@ -1,0 +1,185 @@
+I"7<p>If you don’t want to read the post and just want to mess around with the spreadsheet, <a href="/assets/other/cost-maternity.xlsm">here it is</a>.</p>
+
+<hr />
+
+<p>For a lot of people, it seems that the decision of whether or not to have children is black-and-white. Some grow up knowing that
+their lives will feel empty and meaningless without children, while others staunchly insist that they will never have one.</p>
+
+<p>I was in the third camp. Oh, sure, as an adolescent and young(er) adult I was very comfortable proclaiming one stance or another
+without giving them much thought, but it wasn’t until more recently that I decided to really sit down and examine the pros and
+cons of having children.</p>
+
+<p><img src="/assets/images/2016/children-darwin-journal.jpg" alt="Photograph from Darwin's Journal" />
+<span class="caption">Charles Darwin’s decision on whether or not to marry. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></span></p>
+
+<p>Sadly, my cost-benefit analysis was not as easy as Darwin’s. After everything was down on the page, it still didn’t seem clear
+which one would be the better choice in the long term, largely because it was nearly impossible to quantify the costs and the
+benefits. How do you weigh “freedom to go where I want” against “satisfaction from watching someone you love grow and change,”
+for example? So, I decided to do as any good mathematically-inclined person would: get as many numbers as I can.</p>
+
+<p>A word of warning: if the idea of associating a monetary value with a child is disturbing to you, it would be a good idea now to
+close this tab.</p>
+
+<h1 id="i-the-numbers">I. The numbers</h1>
+
+<p>The easiest thing to put a number on is the cost of raising a child. According to
+<a href="http://www.moneysense.ca/save/financial-planning/the-real-cost-of-raising-a-child/">this article on Moneysense</a>, in 2015, it would
+have costed roughly $254k to raise a child from birth to age 18 in Canada, or $13,366 per year. After that, there is university.
+Moneysense does not offer a figure for how much the average university student costs their parents, but I ballparked it at $20000
+– roughly equal to the previous cost per year, plus a year’s worth of tuition at UBC. This yielded a preliminary total of $334k
+(CAD).</p>
+
+<p>But I was not satisfied with this number. For one thing, it does not take into account one of the biggest downsides of having
+children for middle class, professional women: the harm it does to one’s career. As well, it neglects the power of compound
+interest and therefore the lost investment opportunity cost. After all, the prime childbearing years for a woman (20-30) are
+also the prime retirement saving years. A dollar invested at age 25 is worth $3.87 invested at age 45. <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+<p><a href="http://www.wsj.com/articles/SB10001424052970203917304574413792994350108">This article</a> from the Wall Street Journal offers a more
+realistic-sounding figure of $1.1M. But I wasn’t satisfied with that number, either, largely because two of the factors they
+mention – the insane cost of American private universities, and taking many years off from work to raise a child – are unlikely
+to apply to me. And the WSJ article still doesn’t mention opportunity cost.</p>
+
+<p>I dug up more numbers:</p>
+
+<ul>
+  <li><a href="http://www.esdc.gc.ca/en/ei/maternity_parental/benefit_amount.page">Employment insurance</a> pays out 55% of a new (birth) mother’s
+previous income for up to a year, but there is a cap for $537 per week. In practice, the wage penalty a woman can expect to receive
+in her first year after having a child must vary by an enormous amount since different women take different lengths of leave, and
+lower income women receive proportionally greater benefits.</li>
+  <li>The median income for Vancouver-area women, aged 25-54, who were working full time, was $54,425 as of the 2012 census, according
+to <a href="http://www12.statcan.gc.ca/nhs-enm/2011/dp-pd/dt-td/Ap-eng.cfm?LANG=E&amp;APATH=3&amp;DETAIL=0&amp;DIM=0&amp;FL=A&amp;FREE=0&amp;GC=0&amp;GID=0&amp;GK=0&amp;GRP=0&amp;PID=106746&amp;PRID=0&amp;PTYPE=105277&amp;S=0&amp;SHOWALL=0&amp;SUB=0&amp;Temporal=2013&amp;THEME=98&amp;VID=0&amp;VNAMEE=&amp;VNAMEF">StatsCan</a>.</li>
+  <li>The <a href="http://www.conferenceboard.ca/press/newsrelease/15-10-29/modest_base_salary_increases_expected_to_continue_in_2016.aspx">average salary increase</a>
+in BC in 2016 was projected to be 2.3%, but this is a little lower than normal, so I used 2.5%; meanwhile,
+<a href="http://www.bankofcanada.ca/core-functions/monetary-policy/inflation/">inflation is 2%</a>.</li>
+  <li>The <a href="http://www.vancouverobserver.com/life/health/delay-childbearing-increases-ubc-study-shows-people-lack-knowledge-about-fertility">average maternal age</a>
+for a first-time birth mother in BC is 30-34 – I used 32 – while the fertility rate hovers around
+<a href="http://www.statcan.gc.ca/tables-tableaux/sum-som/l01/cst01/hlth85b-eng.htm">1.4-1.5</a>, which I rounded down to 1.</li>
+  <li>Estimates of the “motherhood penalty” vary. According to
+<a href="http://link.springer.com/article/10.1007%2Fs13524-011-0068-6">this paper</a>, it averages 5% lower per child (not sure if that’s
+additive or multiplicative; additive would be more punishing). This
+<a href="http://www.statcan.gc.ca/pub/75-001-x/2009103/article/10823-eng.htm#a1">StatsCan analysis</a> from 2009 gives 9%, 12%, and 20%,
+respectively, for women with 1, 2, and 3 children. I went with a 7% per child multiplicative estimate.</li>
+</ul>
+
+<p>… and put them into a spreadsheet, which you can find
+<a href="/assets/other/cost-maternity.xlsm">here</a> (clicking the link will begin the download. Also, you will need to enable macros to
+use the spreadsheet with your own numbers).</p>
+
+<h2 id="ii-explanation-of-spreadsheet">II. Explanation of spreadsheet</h2>
+
+<p><img src="/assets/images/2016/children-spreadsheet.jpg" alt="Screenshot of spreadsheet" />
+I used the values mentioned above and rounded the cost of raising a child up to $14k per year, because Vancouver is expensive.
+Cost of a university-aged child was set to $21k, allowing for $7000 per year for tuition. The sheet automatically adjusts these
+numbers to account for inflation.</p>
+
+<p>Additionally, I added a field for savings interest rate. The default value is 7%, as that is the historical market average. And
+I added the option of a discount for later children.</p>
+
+<p>I used a simplified tax calculation with only 4 tax brackets. <sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+<p>Two numbers are returned near the bottom of the sheet:</p>
+
+<ol>
+  <li><strong>Cost of children</strong>: This is the amount each child costed to raise, plus lost wages. It does not consider interest.</li>
+  <li><strong>Opportunity cost</strong>: To explain, if there are two identical woman existing in parallel universes, and one of them had children
+and the other didn’t and instead invest 100% of the extra money she has, this is how much more woman 2 would have when they both
+retire.</li>
+</ol>
+
+<p>Finally, I added an extra option to see how varying savings rates affect things.</p>
+
+<h2 id="iii-the-true-cost-or-an-ode-to-compound-interest">III. The true cost, or, “An ode to compound interest”</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Warning: this is the part where I will really be talking about children as if they were purchasable objects.</code></p>
+
+<p>A few things jumped out at me while playing around with the spreadsheet.</p>
+
+<p><strong>Scenario 1:</strong> First, holy hell, children are expensive. Using the average numbers listed above, a 32-year-old Vancouver woman
+who gives birth in 2016 will pay $601,392 in childcare costs and lost wages throughout her lifetime. If she did not have a
+child and invested all of her money in an index fund, she would retire with an extra $2.59M.</p>
+
+<p><strong>Scenario 2:</strong> I tried putting in a more favourable, but still realistic scenario – maternal age of 40 with an initial income
+of $30,000, an optimistic 2% motherhood penalty, and earning 80% of normal wage during the maternity year. This results in an
+opportunity cost for the first child of $1.21M at age 65.</p>
+
+<p><strong>Scenario 3:</strong> Then I changed one variable – I reduced the maternal age from 40 to 25. The retirement savings almost triples
+as a result. So, if you are 25 in 2016 and considering having a child, you have a third choice other than have-the-joys-and-tribulations-of-childraising or $3.36M-extra-retirement-savings: you could wait 15 years and get a steep discount.</p>
+
+<p>The takeaway: “peak childbearing age” aside, it really is better to have children as late as possible. Biology sucks.</p>
+
+<p><strong>Scenario 4:</strong> Finally, I put my mother’s statistics into the spreadsheet: first child at age 27, second child 13 years later.
+I have no idea what her salary was or what it would be in modern figures, so I used a reasonable sounding guess of $40000, gave
+her a maternity pay of 70%, and the average 7%-per-child motherhood penalty. I found out that if my mother were having us today,
+my sister and I would cost $1.21M, compounding to just over $5M when our mother turns 65. Just the first child (me) carries an
+opportunity cost of $3.41M of that $5M.</p>
+
+<p>Sorry for being a brat when I was a kid, mom. Maybe it was worth watching me grow and change?</p>
+
+<p>On the bright side, I now know what I’m worth – $3.41M! Hey, that’s not bad.</p>
+
+<h2 id="iv-limitations">IV. Limitations</h2>
+
+<p>If these numbers seem great, consider also that it would take a superhuman amount of self discipline to force yourself to save
+all the money. Let’s say you’re the average Vancouver woman (scenario 1). You decide not to having children, but are not good at
+saving and only manage to invest 10% of the extra money. You end up with $259k of retirement savings, and get to spend an average
+of $16,402 per year on travel, a nicer apartment, bigger TV, etc. This scenario makes having a child seem pretty attractive –
+$259k is not that much for a retirement account, and as for the $16,402, I think most parents would probably agree that they get
+more happiness from their children than they would from taking a few extra vacations and having a bigger TV.</p>
+
+<p>Also keep in mind that, with inflation, $259k or $2.59M or whatever will have less spending power in the future than it does today.</p>
+
+<p>Here is a non-exhaustive list of some of the things this spreadsheet does not account for:</p>
+
+<ul>
+  <li>Supporting a child beyond the age of 22</li>
+  <li>The possible existence of a “fatherhood bonus” (the opposite of the “motherhood penalty”) that some social scientists have
+posited. In traditional heterosexual partnerships, this may offset some of the cost</li>
+  <li>Taking additional time off after having children, or working part time</li>
+  <li>The still-impossible-to-quantify value of “freedom to travel” or “satisfaction from watching them grow”</li>
+  <li>Myriad other individual factors</li>
+  <li>Starting a reality TV show and turning your children into financial assets</li>
+</ul>
+
+<p>A final word: I have intentionally not commented on the fairness, or lack thereof, of the motherhood penalty, nor have I commented
+on the assumption that the female partner (in a heterosexual partnership) must always be the primary caregiver. My spreadsheet
+merely makes calculations based on the way things are today. The motherhood penalty and female-primary-caregiver assumption are
+very, very well explored elsewhere, by people much more qualified than I am to make commentary on them.</p>
+
+<h2 id="v-final-thoughts">V. Final thoughts</h2>
+
+<p>I may as well stop dancing around the conclusion now: I am not having children, and the cost is definitely a factor.</p>
+
+<p>I wonder how many other women – or couples – have also made the same choice. Judging by the dismally low birth rates in BC,
+probably a few, and then a few more after that who stopped after the first child even though they may have wanted more.</p>
+
+<p>And I wonder what all of this means for a country whose population is increasingly ageing. If we want to reach population
+replacement rate<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote">4</a></sup>, then something must be done to encourage people to choose children and preferably to choose children
+early. Reducing their price tag probably wouldn’t hurt.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Darwin’s marriage pro-con list is hilarious (to a modern reader) and well worth a gander.
+Here’s <a href="https://www.brainpickings.org/2012/08/14/darwin-list-pros-and-cons-of-marriage/">an article</a> that includes a readable
+transcript of his list. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>You can always calculate the expected value of any investment with \(\text{initial investment} \times (\text{annual increase} + 1)^{\text{years}}\)
+<br /><br />So, $1 invested at age 25 with a 7% annual increase will, at age 45, be $3.87. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Tax brackets used were:
+<br /><br />&lt; $20k: 0%
+<br />$20k-50k: 20%
+<br />$50k-100k: 30%
+<br />$100k-150k: 40%
+<br />&gt; $150k: 50% <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Economists say we should aim for population replacement, but environmentalists say we shouldn’t because the earth is
+already overpopulated… 
+<br />¯\_(ツ)_/¯ <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

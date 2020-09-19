@@ -1,0 +1,227 @@
+I"� <ul class="table-of-contents">
+  <li><a href="#I">I. Introduction</a>
+    <ul class="table-of-contents">
+      <li><a href="#I-i">i. Why Use Verdi GUI?</a></li>
+      <li><a href="#I-ii">ii. Software Information</a></li>
+      <li><a href="#I-iii">iii. Verdi GUI Demo Video</a></li>
+    </ul>
+  </li>
+  <li><a href="#II">II. Description of UI Elements</a></li>
+  <li><a href="#III">III. Commands</a></li>
+  <li><a href="#IV">IV. Questions and Answers</a>
+    <ul class="table-of-contents">
+      <li><a href="#IV-i">i. Can I change the power by more than 10 mW?</a></li>
+      <li><a href="#IV-ii">ii. Change I change the power by less than 10 mW?</a></li>
+      <li><a href="#IV-iii">iii. Why am I unable to export?</a></li>
+      <li><a href="#IV-iv">iv. The shutter is open and the laser is on, but light is not emitting.</a></li>
+      <li><a href="#IV-v">v. The diode average current shows 0 A, but each diode has a small positive current.</a></li>
+      <li><a href="#IV-vi">vi. There is a fault. What do I do?</a></li>
+      <li><a href="#IV-vii">vii.  Where can I ask other questions?</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a name="I"></a></p>
+<h1 id="i-introduction">I. Introduction</h1>
+
+<p><a name="I-i"></a></p>
+<h2 id="i-why-use-verdi-gui">i. Why Use Verdi GUI?</h2>
+
+<p>Verdi GUI is a small program that allows a Windows computer to interface with a Coherent Verdi laser via RS-232.</p>
+
+<p>Verdi GUI is a faster and safer way to operate the laser as it almost entirely eliminates the need to physically interact with
+the laser. Additionally, it automates the logging process and allows for real-time display of all of the laser’s operating stats
+on one screen, which enables better monitoring of the laser’s health.</p>
+
+<p><a name="I-ii"></a></p>
+<h2 id="ii-software-information">ii. Software Information</h2>
+
+<p>The latest stable version of Verdi GUI is version 1.1.1.</p>
+
+<p>Verdi GUI is is licensed under the MIT License; the source code for Verdi GUI can be found on GitHub.</p>
+
+<p>A copy of the Windows installer for Verdi GUI can be found on the lab PC in Equipment/Optics and Lasers/Lasers/Verdi.</p>
+
+<p>Verdi GUI has been tested on Windows 7 through 10. Verdi GUI will probably also work on older versions of Windows, but has not
+been tested on them.</p>
+
+<p><a name="I-iii"></a></p>
+<h2 id="iii-demo-video">iii. Demo Video</h2>
+
+<div class="video"><iframe src="https://www.youtube.com/embed/ZaWmGg7Yhww" frameborder="0" allowfullscreen=""></iframe></div>
+
+<p><a name="II"></a></p>
+<h1 id="ii-description-of-ui-elements">II. Description of UI Elements</h1>
+
+<p>The Verdi GUI UI appears as follows:</p>
+
+<p><img src="/assets/images/2016/verdi-gui-screenshot.png" alt="Screenshot of Verdi Gui" /></p>
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>UI Element</th>
+    <th>Description</th>
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>Shutter Indicator/Toggle</td>
+    <td>Shows the laser's shutter's status. Clicking the button toggles the laser shutter. In the displayed image, the shutter is
+    open, and clicking the button would close the shutter.</td>
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>Power Setting Display</td>
+    <td>Displays the laser's set power in watts (actual power output is usually within 1% of set power).</td>
+  </tr>
+  
+  <tr>
+    <td>3, 4</td>
+    <td>Increase/Decrease Power</td>
+    <td>Increase or decrease the laser's set power by 0.01 watts.</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>Export Button</td>
+    <td>When clicked, Verdi GUI will ask for the logger's name, then save this information, along with the current date and
+    time, the laser's power setting, currents, and temperatures, as well as number of operating hours, to a .csv (Excel) log file.
+    The log file can be found in Verdi GUI's installation folder.</td>
+  </tr>
+  
+  <tr>
+    <td>6</td>
+    <td>Open Log Button</td>
+    <td>Opens the log file.</td>
+  </tr>
+  
+  <tr>
+    <td>7</td>
+    <td>Commands Button</td>
+    <td>Opens a list of all usable commands.</td>
+  </tr>
+  
+  <tr>
+    <td>8</td>
+    <td>Input Box</td>
+    <td>Commands can be typed here. Pressing enter will send the command.</td>
+  </tr>
+  
+  <tr>
+    <td>9</td>
+    <td>Output Box</td>
+    <td>Messages from Verdi GUI to the user are displayed here.</td>
+  </tr>
+  
+  <tr>
+    <td>10</td>
+    <td>Temperatures</td>
+    <td>Temperatures of various laser parts are displayed here in degrees Celsius.</td>
+  </tr>
+  
+  <tr>
+    <td>11</td>
+    <td>Currents</td>
+    <td>The current of each diode, as well as their average current, are displayed here, in amps.</td>
+  </tr>
+
+</table>
+
+<p><a name="III"></a></p>
+<h1 id="iii-commands">III. Commands</h1>
+
+<p>Verdi GUI accepts the following commands:</p>
+
+<table>
+
+  <tr>
+    <th>Command</th>
+    <th>Action</th>
+  </tr>
+  
+  <tr>
+    <td>-help, help</td>
+    <td>Print a helpful message.</td>
+  </tr>
+  
+  <tr>
+    <td>-baud n</td>
+    <td>Changes the computer's serial communication baudrate to n. Does NOT change the laser's serial communication baudrate.</td>
+  </tr>
+  
+  <tr>
+    <td>-port</td>
+    <td>Prints the port currently being used for serial communication.</td>
+  </tr>
+  
+  <tr>
+    <td>-port n</td>
+    <td>Switch to using COM port n for serial communication.</td>
+  </tr>
+  
+  <tr>
+    <td>-scan</td>
+    <td>Perform a full sweep of all serial ports to try to find a connected laser.</td>
+  </tr>
+  
+  <tr>
+    <td>-update</td>
+    <td>Do a full update of all the laser's stats.</td>
+  </tr>
+  
+  <tr>
+    <td>-update n</td>
+    <td>Tell Verdi GUI to automatically refresh the laser's stats every n seconds.</td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;</td>
+    <td>All other commands are sent directly as serial commands to the laser.</td>
+  </tr>
+  
+</table>
+
+<p>A full list of valid serial commands can be found in the Operator’s Manual for the laser.</p>
+
+<p><a name="IV"></a></p>
+<h1 id="iv-questions-and-answers">IV. Questions and Answers</h1>
+
+<p><a name="IV-i"></a></p>
+<h2 id="i-can-i-change-the-power-by-more-than-10-mw">i. Can I change the power by more than 10 mW?</h2>
+
+<p>It is not recommended to change the power setting by more than 10 mW at a time, as that may cause damage to the Verdi. However, if you are certain that you know what you are doing, then the power can be set by sending a serial command to the laser, “POWER = n.nn”, where n.nn is the new power setting in watts.</p>
+
+<p><a name="IV-ii"></a></p>
+<h2 id="ii-can-i-change-the-power-by-less-than-10-mw">ii. Can I change the power by less than 10 mW?</h2>
+
+<p>This cannot be accomplished by Verdi GUI alone. However, an external system is currently under development that will allow sub-milliwatt adjustments. Ask Lise, Mokter or Alireza for more information.</p>
+
+<p><a name="IV-iii"></a></p>
+<h2 id="iii-why-am-i-unable-to-export">iii. Why am I unable to export?</h2>
+
+<p>Double check that the log file is not currently open. Verdi GUI cannot write to a file that is in use.</p>
+
+<p>If the file is closed and Verdi GUI still cannot export, make sure that you have permission to write in the folder that Verdi GUI is installed – “C:/Verdi GUI/” by default.</p>
+
+<p><a name="IV-iv"></a></p>
+<h2 id="iv-the-shutter-is-open-and-the-laser-is-on-but-light-is-not-emitting">iv. The shutter is open and the laser is on, but light is not emitting.</h2>
+
+<p>Did you turn the keyswitch to the “ON” position? Verdi GUI cannot operate the keyswitch – it must be operated manually by the user.</p>
+
+<p><a name="IV-v"></a></p>
+<h2 id="v-the-diode-average-current-shows-0-a-but-each-diode-has-a-small-positive-current">v. The diode average current shows 0 A, but each diode has a small positive current.</h2>
+
+<p>This is a known issue with the Verdi laser. After the laser is put into standby, it stops checking the individual diode currents and instead will keep showing the last known diode current until the laser is turned back on.</p>
+
+<p><a name="IV-vi"></a></p>
+<h2 id="vi-there-is-a-fault-what-do-i-do">vi. There is a fault. What do I do?</h2>
+
+<p>Follow the instructions in the Operator’s Manual to rectify the fault, then click “Okay” to tell Verdi GUI that the fault has been cleared. Verdi GUI cannot clear faults on its own, since clearing faults usually requires physically manipulating parts of the laser.</p>
+
+<p><a name="IV-vii"></a></p>
+<h2 id="vii-where-can-i-ask-other-questions">vii. Where can I ask other questions?</h2>
+
+<p>You can ask Lise in person or by email.</p>
+:ET

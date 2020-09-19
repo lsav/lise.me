@@ -1,0 +1,78 @@
+I"�<script>
+function obfustimacateEmail() {
+    var chars = ",.abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
+    var order = [13, 10, 20, 6, 29, 13, 10, 20, 6, 1, 14, 6];
+    var addr = "";
+    for ( var i = 0 ; i < order.length ; i++ ) {
+    addr += chars[order[i]];
+    }
+    document.write("<a href='mailto:"+addr+"'>"+addr+"</a>");  
+}
+</script>
+
+<div class="center-text"><script>obfustimacateEmail();</script></div>
+
+<h1 id="education">Education</h1>
+
+<h4 id="2016---2020-basc-computer-engineering-university-of-british-columbia-94-gpa">2016 - 2020, B.A.Sc Computer Engineering, University of British Columbia (94% GPA)</h4>
+<ul>
+  <li>2019 Rockwell Scholarship for Electrical and Computer Engineering</li>
+  <li>2017, 2018, 2019 Trek Excellence Scholarship (top 5%)</li>
+  <li>2018 UBC ECE Department Scholarship</li>
+  <li>2017 Engineering Physics Anniversary Scholarship (1 out of 240 candidates)</li>
+  <li>Undergraduate Teaching Assistant for CS320: Intermediate Algorithms</li>
+</ul>
+
+<h1 id="experience">Experience</h1>
+
+<h4 id="fall-2019-software-engineer-intern-facebook">Fall 2019, Software Engineer Intern, Facebook</h4>
+<ul>
+  <li>Created a system to allow revoking of “verified” status from businesses on Facebook’s platforms to help combat fraudulent accounts</li>
+  <li>Worked cross-functionally with designers, content creators, and internal customers to get a full end-to-end user experience launch-ready three weeks ahead of schedule</li>
+</ul>
+
+<h4 id="summer-2019-software-engineer-intern-stripe">Summer 2019, Software Engineer Intern, Stripe</h4>
+<ul>
+  <li>Transitioned Stripe’s PCI-compliant cardholder environment from push-based deployments over SSH to a highly-secure, push-based deployment system</li>
+</ul>
+
+<h4 id="summer-2018-software-development-engineer-co-op-a-thinking-ape-entertainment">Summer 2018, Software Development Engineer Co-op, A Thinking Ape Entertainment</h4>
+<ul>
+  <li>Client-side optimization and end-to-end feature development for multiplayer mobile game using Python and C#</li>
+  <li>Reduced total memory usage by ~10% (20 MB) and initial asset load time by ~25% (15 seconds)</li>
+  <li>Along with two engineers and one game designer, created a new realm-wide competition system</li>
+</ul>
+
+<h4 id="spring-2017-software-developer-co-op-copperleaf-technologies">Spring 2017, Software Developer Co-op, Copperleaf Technologies</h4>
+<ul>
+  <li>Full stack development using using C# and AngularJS for asset analytics software</li>
+  <li>Implemented single sign-on system to interoperate with Ping, Okta, Active Directory, and other identity providers</li>
+  <li>Consistently resolved tickets and delivered features ahead of schedule</li>
+</ul>
+
+<h4 id="summer-2016-undergraduate-research-assistant-ubc-nanostructures-lab">Summer 2016, Undergraduate Research Assistant, UBC Nanostructures Lab</h4>
+<ul>
+  <li>Wrote a <a href="https://youtu.be/ZaWmGg7Yhww">Python program</a> to control and automate a laser during experiments on carbon nanotubes</li>
+  <li>It’s been 4 years and they’re still giving the little ol’ installer out to all the new lab members; isn’t that wild?</li>
+</ul>
+
+<h1 id="projects">Projects</h1>
+
+<ul>
+  <li>
+    <p><strong>MagnetoDB</strong>: A horizontally scalable, fault-tolerant, key-value store developed in Java and modelled on Amazon’s DynamoDB</p>
+  </li>
+  <li>
+    <p><strong>Kerbodyne Analytic Orbit System (KAOS)</strong>: a <a href="https://github.com/KMC-70/KAOS">mission planning system</a> for imaging satellites using Python, Flask, and PostgreSQL, using a novel analytic algorithm to calculate satellite visibility 75% faster than current industry standard brute force algorithms</p>
+  </li>
+  <li>
+    <p><strong>Optimal Node Placement for TensorFlow Inference</strong>: part-time research project with UBC Distributed Systems lab to improve inference throughput by splitting trained TensorFlow models across multiple devices (sadly, we did not succeed in besting <a href="https://www.tensorflow.org/serving">Google’s solution</a>)</p>
+  </li>
+  <li>
+    <p><strong>The Magic School Bot!</strong>: a multi-tasking, beacon-sensing, line-following, zipline-riding <a href="https://youtu.be/PCNbXAErK9I">secret agent robot</a> built in five wild, wild weeks. Won 3rd place at the annual EngPhys Robot Contest</p>
+  </li>
+  <li>
+    <p><strong>Sunrise Lamp</strong>: a smart Arduino-powered <a href="https://youtu.be/MBOkNSHl62o">lighting system</a> to make waking up at 5AM in a Canadian winter slightly more tolerable</p>
+  </li>
+</ul>
+:ET

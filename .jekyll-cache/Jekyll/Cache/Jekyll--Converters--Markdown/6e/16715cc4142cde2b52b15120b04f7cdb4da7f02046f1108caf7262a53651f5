@@ -1,7 +1,4 @@
----
-layout: index
----
-<script>
+I"<script>
 function obfustimacateEmail() {
     var chars = ",.abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
     var order = [13, 10, 20, 6, 29, 13, 10, 20, 6, 1, 14, 6];
@@ -13,8 +10,9 @@ function obfustimacateEmail() {
 }
 </script>
 
-Software engineer currently working in high frequency trading.
+<p>Software engineer currently working in high frequency trading.</p>
 
-Toronto native recently transplanted to Chicago.
+<p>Toronto native recently transplanted to Chicago.</p>
 
-Want to get in touch? <script>obfustimacateEmail();</script>
+<p>Want to get in touch? <script>obfustimacateEmail();</script></p>
+:ET
